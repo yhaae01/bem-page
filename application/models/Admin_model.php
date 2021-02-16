@@ -7,9 +7,9 @@ class Admin_model extends CI_Model {
     {
         $data = [
             'name'          => htmlspecialchars($this->input->post('name', true)),
-            'email'         => htmlspecialchars($this->input->post('email', true)),
+            'username'      => htmlspecialchars($this->input->post('username', true)),
             'image'         => 'default.png',
-            'password'      => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+            'password'      => password_hash("1234", PASSWORD_DEFAULT),
             'role_id'       => 2,
             'is_active'     => 1,
             'date_created'  => time()

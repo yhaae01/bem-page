@@ -11,13 +11,12 @@ class Auth extends CI_Controller {
 
     public function index()
     {
-        if ($this->session->userdata('email')) {
+        if ($this->session->userdata('username')) {
             redirect('user');
         }
 
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email',[
-            'required'      => 'Email tidak boleh kosong!',
-            'valid_email'   => 'Format E-mail tidak sesuai!'
+        $this->form_validation->set_rules('username', 'Username', 'trim|required',[
+            'required'      => 'Email tidak boleh kosong!'
         ]);
         $this->form_validation->set_rules('password', 'Password', 'trim|required',[
             'required'      => 'Password tidak boleh kosong!'
@@ -36,9 +35,9 @@ class Auth extends CI_Controller {
     }
 
     private function _login() {
-        $email      = $this->input->post('email');
+        $username   = $this->input->post('username');
         $password   = $this->input->post('password');
-        $user       = $this->db->get_where('user', ['email' => $email])->row_array();
+        $user       = $this->db->get_where('user', ['username' => $username])->row_array();
         
         // Jika user ada
         if ($user) {
@@ -47,7 +46,7 @@ class Auth extends CI_Controller {
                 // Cek password
                 if (password_verify($password, $user['password'])) {
                     $data = [
-                        'email'     => $user['email'],
+                        'username'  => $user['username'],
                         'role_id'   => $user['role_id']
                     ];
                     $this->session->set_userdata($data);
@@ -83,7 +82,7 @@ class Auth extends CI_Controller {
 
     public function logout()
     {
-        $this->session->unset_userdata('email');
+        $this->session->unset_userdata('username');
         $this->session->unset_userdata('role_id');
         $this->session->set_flashdata('message', 
             '<div class="alert alert-success" role="alert">

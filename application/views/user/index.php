@@ -18,7 +18,7 @@
             <div class="col-md-8">
                 <div class="card-body">
                     <h3 class="card-title"><?= ucwords($user['name']); ?></h3>
-                    <h6 class="card-text"><?= $user['email']; ?></h6>
+                    <h6 class="card-text">date created:</h6>
                     <span class="badge badge-primary"><?= date('d F Y', $user['date_created']); ?></span>
                 </div>
             </div>

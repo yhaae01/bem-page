@@ -15,7 +15,7 @@ class Menu extends CI_Controller {
     public function index()
     {
         $data['title']  = 'Pengelolaan Menu';
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['menu']   = $this->db->get('user_menu')->result_array();
 
         $this->form_validation->set_rules('menu', 'Menu', 'trim|required',[
@@ -38,7 +38,7 @@ class Menu extends CI_Controller {
         $this->load->library('pagination');
 
         $data['title']  = 'Pengelolaan Submenu';
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['subMenu']= $this->menu->getsubMenu();
         $data['menu']   = $this->db->get('user_menu')->result_array();
 

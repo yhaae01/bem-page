@@ -5,11 +5,11 @@ class User_model extends CI_Model {
 
     public function editProfile()
     {
-        $name   = $this->input->post('name');
-        $email  = $this->input->post('email');
+        $name       = $this->input->post('name');
+        $username   = $this->input->post('username');
 
         $this->db->set('name', $name);
-        $this->db->where('email', $email);
+        $this->db->where('username', $username);
         $this->db->update('user');
         
         $this->session->set_flashdata('message', 
@@ -21,7 +21,7 @@ class User_model extends CI_Model {
 
     public function changePassword()
     {
-        $data['user']       = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']       = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $currentPassword    = $this->input->post('currentpassword');
         $newPassword        = $this->input->post('newpassword1');
 
@@ -43,7 +43,7 @@ class User_model extends CI_Model {
                 $passwordHash   = password_hash($newPassword, PASSWORD_DEFAULT);
 
                 $this->db->set('password', $passwordHash);
-                $this->db->where('email', $this->session->userdata('email'));
+                $this->db->where('username', $this->session->userdata('username'));
                 $this->db->update('user');
 
                 $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">

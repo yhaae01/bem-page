@@ -7,8 +7,7 @@
     <div class="row">
         <div class="col-lg">
             <?= form_error('name', '<div class="alert alert-danger">', '</div>'); ?>
-            <?= form_error('email', '<div class="alert alert-danger">', '</div>'); ?>
-            <?= form_error('password1', '<div class="alert alert-danger">', '</div>'); ?>
+            <?= form_error('username', '<div class="alert alert-danger">', '</div>'); ?>
             <?= $this->session->flashdata('message'); ?>
         
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#tambahUser">Tambah User</a>
@@ -17,7 +16,7 @@
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nama</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">Username</th>
                     <th scope="col">Gambar</th>
                     <th scope="col">Tanggal Dibuat</th>
                     <th scope="col">Action</th>
@@ -29,7 +28,7 @@
                     <tr>
                         <th scope="row"><?= $i; ?></th>
                         <td><?= ucwords($u['name']); ?></td>
-                        <td><?= $u['email']; ?></td>
+                        <td><?= $u['username']; ?></td>
                         <td><img src="<?= base_url('assets/img/profile/') . $u['image']; ?>" height="50"></td>
                         <td><?= date('d F Y', $u['date_created']); ?></td>
                         <td>
@@ -65,13 +64,7 @@
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nama ...">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Email ...">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password1" name="password1" placeholder="Password ...">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password2" name="password2" placeholder="Ulangi password ...">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username ...">
                 </div>
             </div>
             <div class="modal-footer">
@@ -94,8 +87,8 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?= base_url('admin/deleteUser') . $u['id']; ?>" method="post">
-                <p>Yakin ingin hapus User <?= $u['name'] ?></p>
+            <form action="<?= base_url('admin/deleteUser/') . $u['id']; ?>" method="post">
+                <p>Yakin ingin hapus User: <?= $u['name'] ?></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

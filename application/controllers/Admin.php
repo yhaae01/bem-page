@@ -14,7 +14,7 @@ class Admin extends CI_Controller {
     public function index()
     {
         $data['title']  = 'Dashboard';
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -25,23 +25,16 @@ class Admin extends CI_Controller {
 
     public function manageUser()
     {
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['users']  = $this->db->get_where('user', ['role_id' => 2])->result_array();
 
         $this->form_validation->set_rules('name', 'Nama', 'trim|required',[
             'required'      => 'Nama harus diisi!'
         ]);
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]',[
-            'required'      => 'Email harus diisi!',
-            'valid_email'   => 'Format E-mail tidak sesuai!',
-            'is_unique'     => 'Email sudah digunakan!'
+        $this->form_validation->set_rules('username', 'username', 'trim|required|is_unique[user.username]',[
+            'required'      => 'username harus diisi!',
+            'is_unique'     => 'username sudah digunakan!'
         ]);
-        $this->form_validation->set_rules('password1', 'Password', 'trim|required|min_length[6]|matches[password2]',[
-            'required'      => 'Password harus diisi!',
-            'min_length'    => 'Password minimal 6 karakter!',
-            'matches'       => 'Password tidak sama!'
-        ]);
-        $this->form_validation->set_rules('password2', 'Password', 'trim|required|matches[password1]');
         
         if ($this->form_validation->run() == FALSE) {
             $data['title']  = 'Kelola User';
@@ -64,7 +57,7 @@ class Admin extends CI_Controller {
     public function role()
     {
         $data['title']  = 'Role';
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['role']   = $this->db->get('user_role')->result_array();
 
         $this->form_validation->set_rules('role', 'Role', 'trim|required',[
@@ -95,7 +88,7 @@ class Admin extends CI_Controller {
     public function roleaccess($role_id)
     {
         $data['title']  = 'Akses Role';
-        $data['user']   = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['role']   = $this->db->get_where('user_role', ['id' => $role_id])->row_array();
         
         $this->db->where('id !='. 1);

@@ -3,7 +3,7 @@
 function is_login()
 {
     $ci = get_instance();
-    if (!$ci->session->userdata('email')) {
+    if (!$ci->session->userdata('username')) {
         $ci->session->set_flashdata('message', 
         '<div class="alert alert-danger" role="alert">
         Silahkan login terlebih dahulu!
