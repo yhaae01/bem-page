@@ -1,5 +1,11 @@
-###################
-Sistem Informasi BEM-Page
-###################
+=BEM-PAGE=
 
-Menggunakan CodeIgniter 3 + Bootstrap 4 
+CodeIgniter3 + Bootstrap 4
+
+super admin:
+username: surya123
+pass: 123123
+
+admin:
+username: eka123
+pass: 1234
