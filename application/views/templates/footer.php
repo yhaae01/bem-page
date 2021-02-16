@@ -48,6 +48,21 @@
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/') ?>js/sb-admin-2.min.js"></script>
 
+<!-- CK Editor -->
+<script src="<?= base_url('assets/vendor/ckeditor/ckeditor.js') ?>"></script>
+
+<script>
+let misi = document.getElementById("misi");
+CKEDITOR.replace(misi, {
+    language: 'en-gb'
+});
+let visi = document.getElementById("visi");
+CKEDITOR.replace(visi, {
+    language: 'en-gb'
+});
+CKEDITOR.config.allowedContent = true;
+</script>
+
 <script>
     // Menampilkan nama file saat upload gambar
     $('.custom-file-input').on('change', function() {
