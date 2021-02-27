@@ -1,0 +1,1643 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+
+html, body{
+    font-family: 'Montserrat';
+    background: #ffffff;
+    font-size: 18px;
+    height: 100vh;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+// .content-wrapper{
+//     width: 100%;
+//     // padding:50px;
+//     // height: 100vh;
+//     // background-color: black;
+// }
+
+.content-wrapper{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header.header-responsive {
+    // position: fixed;
+    // top: 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-logo-header {
+    padding: 10px;
+    margin-inline-start: 100px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.pipe{
+    margin-left: 25px;
+    font-size: 3em;
+}
+
+h2.title-brand{
+    margin-left: 25px;
+}
+
+nav.card-nav-link {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    margin-left: 300px;
+}
+
+a.link-header{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link-header.active {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #eee;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
+a.icon {
+   display: none;
+}
+
+.section-header{
+    box-sizing: content-box;
+    // background-color: #222222;
+}
+
+.container-brand-logo-bem{
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.brand-logo{
+    margin-top: 6px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.image-cover-card{
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    left: 500px;
+    top: 100px;
+    z-index: 1;
+}
+
+.image-cover-ellipse{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    // left: 390px;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.section-content-header{
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+// End Style Header
+
+.overlay-bg {
+    background: url(/Bemubsibogor/assets/img/Ellipse-2.png);
+    height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 90%;
+    margin-top: -50%;
+}
+
+.section-body-article{
+    position: inherit;
+    box-sizing: border-box;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+h2.title-page {
+    display: block;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.card-wrapper-content-article {
+    width: 100%;
+    height: 100%;
+    padding-top: 735px;
+}
+
+.card-content-article {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image-article {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+img.image-article {
+    width: 100%;
+    height: 100%;
+}
+
+.card-article{
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+.card-article, article{
+    text-align: justify;
+}
+
+
+// Style Footer Default
+
+footer.footer-responsive{
+    position: fixed;
+    // margin-top: 75%;
+    bottom: 0px;
+    padding-bottom: 35px;
+    height: 100%;
+    background-color: #2D3995;
+}
+
+.card-content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.card-desc-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.card-image-big{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.card-image-footer-bsi{
+    margin-right: 25px;
+    margin-left: 100px;
+}
+
+.card-image-footer-bem{
+    margin-right: 25px;
+}
+
+.card-image-small{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-right: 30px;
+}
+
+.card-image-footer-delarosa{
+    width: 50px;
+}
+
+.card-desc-footer-bem{
+    margin-left: 21px;
+    display: block;
+    color: #eaeaea;
+}
+
+.card-desc-footer-bem > h2 {
+    width: 400px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+
+
+color: #FFFFFF;
+}
+
+.card-desc-footer-bem > p:not(:last-child){
+    // font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.card-desc-footer-bem > p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.card-sosmed-footer{
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    align-content: center;
+}
+
+.card-sosmed-footer h2 {
+    font-size: 1em;
+    margin-right: 50px;
+    color: #eaeaea;
+}
+
+.link-sosmed-instagram{
+    flex: 1;
+    margin-right: -50px;
+}
+.link-sosmed-email{
+    flex: 1;
+    margin-left: -150px;
+}
+
+.card-address-footer{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.card-icon-address{
+    margin-right: 25px;
+}
+
+.desc-address{
+    color: #eaeaea;
+    margin-right: 100px;
+}
+
+.copyright{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 100px;
+/* identical to box height, or 186% */
+
+
+    color: #FFFFFF;
+}
+
+// End Style Footer Default
+
+
+// Style Resposive Layout
+
+@media (min-width:310px) and (max-width:410px){
+
+     // Style Header Responsive Mobile S Device 
+     header.header-responsive.sticky {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2d3995;
+        z-index: 1;
+    }
+
+    header.header-responsive {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 2px;
+    }
+
+    .card-logo-header {
+        padding: 10px;
+        margin-inline-start: 20px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 30%;
+    }
+
+    h2.title-brand {
+        font-size: 2.4em;
+        margin-left: 0px;
+        width: 180px;
+    }
+
+    img.logo-bem {
+        width: 25%;
+    }
+
+    .pipe {
+        margin: auto 20px !important;
+        font-size: 6em;
+    }
+
+    nav.card-nav-link a{
+        display: none;
+    }
+
+    nav.card-nav-link {
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 auto;
+        margin-left: 5px;
+    }
+
+    nav.card-nav-link a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.card-nav-link.responsive {
+        position: relative;
+        display: block;
+        background-color: #2D3995;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav.card-nav-link.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    nav.card-nav-link.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    a.icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-right: 25px;
+    }
+
+    .overlay-bg{
+        margin-top: -65%;
+        padding-bottom: unset;
+    }
+
+    h2.title-page{
+        top: 15%;
+        font-size: 18px;
+    }
+
+    // End Style Header Responsive Mobile S Device
+
+    // Style Body Responsive Mobile S Device
+
+    .card-wrapper-content-article {
+        width: 100%;
+        height: 100%;
+        padding-top: unset;
+    }
+
+    .card-image-article {
+        width: 270px;
+        height: 260px;
+        margin: auto;
+    }
+
+    .card-article {
+        width: 270px;
+        height: 260px;
+        margin: auto;
+    }
+
+    .card-article, article {
+        text-align: justify;
+        font-size: .85em;
+        line-height: 20px;
+        line-break: normal;
+        flex-wrap: wrap;
+    }
+
+    // End Style Body Responsive Mobile S Device
+
+     // Style Footer Responsive Mobile L Device
+
+     footer.footer-responsive {
+        position: relative;
+        margin-top: 100%;
+        bottom: 0px;
+        height: 100%;
+        padding-bottom: 20px;
+        background-color: #2D3995;
+    }
+
+    .card-content-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+        padding-top: 20px;
+    }
+
+    .card-desc-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 auto;
+    }
+
+   
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .card-image-big {
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: auto 20px;
+    }
+
+    .card-image-footer-bsi {
+        margin: auto 20px;
+        width: 35%;
+    }
+
+    .card-image-footer-bem {
+        margin-right: 5px;
+        width: 35%;
+    }
+
+    .card-image-small {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: 20px auto;
+    }
+
+    .card-image-footer-delarosa {
+        width: 35%;
+    }
+
+    .card-desc-footer-bem {
+        display: block;
+        color: #eaeaea;
+        margin-left: 0px;
+    }
+
+    .card-desc-footer-bem > h2 {
+        width: 310px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p:not(:last-child) {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 26px;
+    }
+
+    .card-sosmed {
+        margin-left: 15%;
+    }
+
+    .card-sosmed-footer {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .card-sosmed-footer a > img {
+        width: 5%;
+        margin: auto 80px !important;
+    }
+
+    .card-sosmed-footer h2 {
+        margin: auto;
+        font-size: .5em;
+        margin-right: -40px;
+        color: #eaeaea;
+    }
+
+    .link-sosmed-instagram {
+        flex: 1;
+        margin-right: -50px;
+    }
+
+    .link-sosmed-email {
+        flex: 1;
+        margin-left: -150px;
+    }
+
+    .card-address-footer {
+        align-items: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+        color: #FFFFFF;
+        margin: 10px auto;
+    }
+
+    .desc-address {
+        color: #eaeaea;
+        margin-right: 35px;
+        font-size: .8em;
+    }
+
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        margin-left: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+
+    // End Style Footer Responsive Mobile L Device
+
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 350px) and (max-width: 420px) { 
+
+     // Style Header Responsive Mobile M Device 
+    header.header-responsive.sticky {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2d3995;
+        z-index: 1;
+    }
+
+    header.header-responsive {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card-logo-header {
+        padding: 10px;
+        margin-inline-start: 10px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 30%;
+    }
+
+    h2.title-brand {
+        font-size: 2.4em;
+        margin-left: 0px;
+        width: 180px;
+    }
+
+    img.logo-bem {
+        width: 25%;
+    }
+
+    .pipe {
+        margin: auto 10px !important;
+        font-size: 6em;
+    }
+
+    nav.card-nav-link a{
+        display: none;
+    }
+
+    nav.card-nav-link {
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 auto;
+        margin-left: 70px;
+    }
+
+    nav.card-nav-link a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.card-nav-link.responsive {
+        position: relative;
+        display: block;
+        background-color: #2D3995;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav.card-nav-link.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    nav.card-nav-link.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    a.icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-right: 25px;
+    }
+
+    .overlay-bg{
+        margin-top: -60%;
+    }
+
+    h2.title-page {
+        top: 15%;
+        font-size: 20px;
+     }
+
+    // End Style Header Responsive Mobile M Device
+
+    // Style Body Responsive Mobile M Device
+
+
+    .card-wrapper-content-article {
+        width: 100%;
+        height: 100%;
+        padding-top: unset;
+    }
+
+    .card-image-article {
+        width: 330px;
+        height: 280px;
+        margin: auto;
+    }
+
+    .card-article {
+        width: 330px;
+        height: 380px;
+        margin: auto;
+    }
+
+    .card-article, article {
+        text-align: justify;
+        font-size: .85em;
+        line-height: 20px;
+        line-break: normal;
+        flex-wrap: wrap;
+    }
+
+    // End Style Body Responsive Mobile M Device
+
+     // Style Footer Responsive Mobile L Device
+
+     footer.footer-responsive {
+        position: relative;
+        margin-top: 75%;
+        bottom: 0px;
+        height: 100%;
+        padding-bottom: 20px;
+        background-color: #2D3995;
+    }
+
+    .card-content-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+        padding-top: 20px;
+    }
+
+    .card-desc-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+   
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .card-image-big {
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: auto 20px;
+    }
+
+    .card-image-footer-bsi {
+        margin: auto 20px;
+        width: 35%;
+    }
+
+    .card-image-footer-bem {
+        margin-right: 5px;
+        width: 35%;
+    }
+
+    .card-image-small {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: 20px auto;
+    }
+
+    .card-image-footer-delarosa {
+        width: 35%;
+    }
+
+    .card-desc-footer-bem {
+        display: block;
+        color: #eaeaea;
+    }
+
+    .card-desc-footer-bem > h2 {
+        width: 310px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p:not(:last-child) {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 26px;
+    }
+
+    .card-sosmed {
+        margin-left: 15%;
+    }
+
+    .card-sosmed-footer {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .card-sosmed-footer a > img {
+        width: 5%;
+        margin: auto 80px !important;
+    }
+
+    .card-sosmed-footer h2 {
+        margin: auto;
+        font-size: .5em;
+        margin-right: -40px;
+        color: #eaeaea;
+    }
+
+    .link-sosmed-instagram {
+        flex: 1;
+        margin-right: -50px;
+    }
+
+    .link-sosmed-email {
+        flex: 1;
+        margin-left: -150px;
+    }
+
+    .card-address-footer {
+        align-items: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+        color: #FFFFFF;
+        margin: 10px auto;
+    }
+
+    .desc-address {
+        color: #eaeaea;
+        margin-right: 35px;
+        font-size: .8em;
+    }
+
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        margin-left: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    // End Style Footer Responsive Mobile L Device
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 420px) and (max-width: 767.98px) { 
+    // Style Header Responsive Mobile L Device 
+    header.header-responsive.sticky {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2d3995;
+        z-index: 1;
+    }
+
+    header.header-responsive {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card-logo-header {
+        padding: 10px;
+        margin-inline-start: 10px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 30%;
+    }
+
+    h2.title-brand {
+        font-size: 2.8em;
+        margin-left: 0px;
+        width: 205px;
+    }
+
+    img.logo-bem {
+        width: 25%;
+    }
+
+    .pipe {
+        margin: auto 20px !important;
+        font-size: 6em;
+    }
+
+    nav.card-nav-link a{
+        display: none;
+    }
+
+    nav.card-nav-link {
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 auto;
+        margin-left: 50px;
+    }
+
+    nav.card-nav-link a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.card-nav-link.responsive {
+        position: relative;
+        display: block;
+        background-color: #2D3995;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav.card-nav-link.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.card-nav-link.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    a.icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-right: 25px;
+    }
+
+    .overlay-bg{
+        margin-top: -60%;
+    }
+
+    h2.title-page {
+        top: 20%;
+        font-size: 25px;
+     }
+
+    // End Style Header Responsive Mobile L Device
+
+    // Style Body Responsive Mobile L Device
+
+
+    
+
+    .card-wrapper-content-article {
+        width: 100%;
+        height: 100%;
+        padding-top: 300px;
+    }
+
+    .card-image-article {
+        width: 370px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .card-article {
+        width: 370px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .card-article, article {
+        text-align: justify;
+        font-size: .85em;
+        line-height: 20px;
+        line-break: normal;
+        flex-wrap: wrap;
+    }
+
+    // End Style Body Responsive Mobile L Device
+
+
+    // Style Footer Responsive Mobile L Device
+
+    footer.footer-responsive {
+        position: relative;
+        margin-top: 100%;
+        bottom: 0px;
+        height: 100%;
+        padding-bottom: 20px;
+        background-color: #2D3995;
+    }
+
+    .card-content-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1 1 auto;
+            padding-top: 20px;
+    }
+
+    .card-desc-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1 1 auto;
+    }
+
+    
+    .card-desc-footer-bem > p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 26px;
+    }
+
+    .card-image-big {
+            justify-content: space-around;
+            align-items: center;
+            flex: 1 1 auto;
+            margin: auto 20px;
+        }
+
+    .card-image-footer-bsi {
+        margin: auto 20px;
+        width: 35%;
+    }
+
+    .card-image-footer-bem {
+        margin-right: 5px;
+        width: 35%;
+    }
+
+    .card-image-small {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: 20px auto;
+    }
+
+    .card-image-footer-delarosa {
+        width: 35%;
+    }
+
+    .card-desc-footer-bem {
+        display: block;
+        color: #eaeaea;
+    }
+
+    .card-desc-footer-bem > h2 {
+        width: 310px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p:not(:last-child) {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 26px;
+    }
+
+    .card-sosmed {
+        margin-left: 15%;
+    }
+
+    .card-sosmed-footer {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .card-sosmed-footer a > img {
+        width: 5%;
+        margin: auto 80px !important;
+    }
+
+    .card-sosmed-footer h2 {
+        margin: auto;
+        font-size: .5em;
+        margin-right: -40px;
+        color: #eaeaea;
+    }
+
+    .link-sosmed-instagram {
+        flex: 1;
+        margin-right: -50px;
+    }
+
+    .link-sosmed-email {
+        flex: 1;
+        margin-left: -150px;
+    }
+
+    .card-address-footer {
+        align-items: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+        color: #FFFFFF;
+        margin: 10px auto;
+    }
+
+    .desc-address {
+        color: #eaeaea;
+        margin-right: 35px;
+        font-size: .8em;
+    }
+
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        margin-left: 120px;
+        color: #FFFFFF;
+    }
+
+
+    // End Style Footer Responsive Mobile L Device
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    // Style Header Responsive Tablet Device
+    header.header-responsive.sticky {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2d3995;
+        z-index: 1;
+    }
+
+    head.header-responsive.responsive{
+        position: fixed;
+        top: 0px;
+    }
+
+    // End Style Responsive Tablet Device
+
+
+    // Style Header Responsive Tablet Device
+    .card-logo-header {
+        padding: 10px;
+        margin-inline-start: 30px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 80%;
+    }
+
+    img.logo-bem {
+        width: 18%;
+    }
+
+    nav.card-nav-link a{
+        display: none;
+    }
+
+    nav.card-nav-link {
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 auto;
+        margin-left: 300px;
+    }
+
+    nav.card-nav-link a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.card-nav-link.responsive {
+        position: relative;
+        display: block;
+        background-color: #2D3995;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav.card-nav-link.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.card-nav-link.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    a.icon {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-right: 25px;
+    }
+
+    h2.title-page {
+      top: 25%;
+    }
+
+    // End Style Header Responsive Tablet
+
+
+    // Style Body Responsive Tablet
+    .card-wrapper-content-article {
+        width: 100%;
+        padding-top: 65%;
+        box-sizing: border-box;
+    }
+
+    .card-content-article {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-image-article {
+        width: 700px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .card-article {
+        width: 700px;
+        height: 500px;
+        margin: auto;
+    }
+    // End Style Body Responsive Tablet
+
+
+    // Style Footer Responsive Tablet
+    footer.footer-responsive {
+        position: relative;
+        margin-top: 120%;
+        bottom: 0px;
+        height: 100%;
+        background-color: #2D3995;
+    }
+
+    .card-content-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+        padding-top: 20px;
+    }
+
+    .card-desc-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+    .card-desc-footer-bem > p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .card-image-big {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin-left: 90px;
+        margin-right: 65px;
+    }
+
+    .card-image-footer-bsi {
+        margin-right: 15px;
+        margin-left: 100px;
+        width: 50%;
+    }
+
+    .card-image-footer-bem {
+        margin-right: 5px;
+        width: 50%;
+    }
+
+    .card-image-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: auto 15px;
+    }
+
+    .card-image-footer-delarosa {
+        width: 55%;
+    }
+
+    .card-desc-footer-bem {
+        display: block;
+        color: #eaeaea;
+    }
+
+    .card-desc-footer-bem > h2 {
+        width: 310px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .card-desc-footer-bem > p:not(:last-child) {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+
+    .card-sosmed {
+        margin-left: 15%;
+    }
+
+    .card-sosmed-footer {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .card-sosmed-footer a > img {
+        width: 5%;
+        margin: auto 80px !important;
+    }
+
+    .card-sosmed-footer h2 {
+        margin: auto;
+        font-size: .7em;
+        margin-right: 50px;
+        color: #eaeaea;
+    }
+
+    .card-address-footer {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin: 10px auto;
+    }
+
+    .desc-address {
+        color: #eaeaea;
+        margin-right: 100px;
+        font-size: .8em;
+    }
+
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 26px;
+        margin-left: 110px;
+        color: #FFFFFF;
+    }
+
+    // End Style Footer Responsive Tablet
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+
+    .card-logo-header {
+        padding: 10px;
+        margin-inline-start: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: end;
+        color: #FFFFFF;
+    }
+
+    nav.card-nav-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 auto;
+        margin-left: 0px;
+    }
+
+    h2.title-page {
+        top: 30%;
+    }
+
+    // .section-body-article {
+    //     position: inherit;
+    //     background: url(../img/Ellipse-2.png);
+    //     background-repeat: no-repeat;
+    //     background-position: 0px -360px;
+    //     background-size: cover;
+    //     width: 100%;
+    //     text-align: center;
+    //     margin-top: -175px;
+    // }
+
+    .card-wrapper-content-article {
+        width: 100%;
+        height: 100%;
+        padding-top: 50%;
+    }
+
+    footer.footer-responsive {
+        position: relative;
+        margin-top: none;
+        height: 100%;
+        background-color: #2D3995;
+    }
+
+    .card-content-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+    .card-desc-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 auto;
+    }
+
+    .card-image-big {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+        flex: 1 1 auto;
+    }
+
+    .card-image-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: auto;
+    }
+
+    .card-desc-footer-bem {
+        margin-left: 90px;
+        display: block;
+        color: #eaeaea;
+    }
+
+    .card-sosmed {
+        text-align: center;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    .card-sosmed-footer {
+        display: flex;
+        flex: 1 1 auto;
+        margin-left: 125px;
+        align-items: center;
+        justify-content: space-between;
+        align-self: center;
+        align-content: center;
+    }
+
+    .card-address-footer {
+        margin-left: 125px;
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .copyright {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        margin-left: 145px;
+        color: #FFFFFF;
+    }
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+    .card-wrapper-content-article {
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+    }
+    
+    footer.footer-responsive {
+    position: relative;
+    height: 200px;
+    background-color: #2D3995;
+    } 
+
+}
