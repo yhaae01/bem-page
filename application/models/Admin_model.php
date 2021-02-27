@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin_model extends CI_Model {
+class Admin_model extends CI_Model
+{
 
     public function regis()
     {
@@ -9,17 +10,19 @@ class Admin_model extends CI_Model {
             'name'          => htmlspecialchars($this->input->post('name', true)),
             'username'      => htmlspecialchars($this->input->post('username', true)),
             'image'         => 'default.png',
-            'password'      => password_hash("1234", PASSWORD_DEFAULT),
+            'password'      => password_hash("1234", PASSWORD_DEFAULT), // Password default 1234
             'role_id'       => 2,
             'is_active'     => 1,
             'date_created'  => time()
         ];
 
         $this->db->insert('user', $data);
-        $this->session->set_flashdata('message', 
-        '<div class="alert alert-success" role="alert">
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
         Berhasil! Akun sudah dibuat.
-        </div>');
+        </div>'
+        );
         redirect('admin/manageUser');
     }
 
@@ -31,10 +34,12 @@ class Admin_model extends CI_Model {
     public function deleteUser($id)
     {
         $this->db->delete('user', ['id' => $id]);
-        $this->session->set_flashdata('message', 
-        '<div class="alert alert-success" role="alert">
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
         Berhasil! Akun sudah dihapus.
-        </div>');
+        </div>'
+        );
         redirect('admin/manageUser');
     }
 
@@ -68,19 +73,18 @@ class Admin_model extends CI_Model {
         $data = [
             'role' => $role
         ];
-        
+
         $this->db->where('id', $id);
         $this->db->update('user_role', $data);
-        
-        $this->session->set_flashdata('message', 
-        '<div class="alert alert-success" role="alert">
+
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
         Berhasil! Role sudah diubah.
-        </div>');
+        </div>'
+        );
         redirect('admin/role');
     }
-
 }
 
 /* End of file Admin_model.php */
-
-?>

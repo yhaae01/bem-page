@@ -8,29 +8,29 @@
         <div class="col-lg-6">
             <?= form_error('role', '<div class="alert alert-danger">', '</div>'); ?>
             <?= $this->session->flashdata('message'); ?>
-        
+
             <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#tambahRole">Tambah Role</a>
             <table class="table table-hover">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Action</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i=1; ?>
-                    <?php foreach($role as $r) : ?>
-                    <tr>
-                        <th scope="row"><?= $i; ?></th>
-                        <td><?= $r['role']; ?></td>
-                        <td>
-                            <a href="<?= base_url('admin/roleaccess/') . $r['id']; ?>" class="badge badge-success">akses</a>
-                            <a href="<?= base_url('admin/updateRole/') . $r['id']; ?>" data-toggle="modal" data-target="#ubahRole" class="badge badge-warning">ubah</a>
-                            <a href="<?= base_url('admin/deleteRole/') . $r['id']; ?>" data-toggle="modal" data-target="#hapusRole" class="badge badge-danger">hapus</a>
-                        </td>
-                    </tr>
-                    <?php $i++; ?>
+                    <?php $i = 1; ?>
+                    <?php foreach ($role as $r) : ?>
+                        <tr>
+                            <th scope="row"><?= $i; ?></th>
+                            <td><?= $r['role']; ?></td>
+                            <td>
+                                <a href="<?= base_url('admin/roleaccess/') . $r['id']; ?>" class="badge badge-success">akses</a>
+                                <a href="<?= base_url('admin/updateRole/') . $r['id']; ?>" data-toggle="modal" data-target="#ubahRole" class="badge badge-warning">ubah</a>
+                                <a href="<?= base_url('admin/deleteRole/') . $r['id']; ?>" data-toggle="modal" data-target="#hapusRole" class="badge badge-danger">hapus</a>
+                            </td>
+                        </tr>
+                        <?php $i++; ?>
                     <?php endforeach; ?>
                 </tbody>
             </table>
@@ -50,14 +50,14 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="tambahRoleLabel">Tambah Role</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?= base_url('admin/role'); ?>" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="role" name="role" placeholder="Nama role ...">
-                </div>
+                <form action="<?= base_url('admin/role'); ?>" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="role" name="role" placeholder="Nama role ...">
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
@@ -75,14 +75,14 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="ubahRoleLabel">Ubah Role</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?= base_url('admin/updateRole/') . $r['id']; ?>" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="role" name="role" placeholder="Nama role ..." value="<?= $r['role']; ?>">
-                </div>
+                <form action="<?= base_url('admin/updateRole/') . $r['id']; ?>" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="role" name="role" placeholder="Nama role ..." value="<?= $r['role']; ?>">
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
@@ -100,12 +100,12 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="hapusRoleLabel">Hapus Role</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?= base_url('admin/deleteRole/') . $r['id']; ?>" method="post">
-                <p>Yakin ingin hapus role <?= $r['role']; ?> ?</p>
+                <form action="<?= base_url('admin/deleteRole/') . $r['id']; ?>" method="post">
+                    <p>Yakin ingin hapus role <?= $r['role']; ?> ?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

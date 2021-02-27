@@ -91,5 +91,3 @@ class User extends CI_Controller {
 }
 
 /* End of file User.php */
-
-?>

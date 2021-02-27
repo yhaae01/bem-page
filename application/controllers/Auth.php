@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends CI_Controller
+{
 
     public function __construct()
     {
@@ -15,30 +16,30 @@ class Auth extends CI_Controller {
             redirect('user');
         }
 
-        $this->form_validation->set_rules('username', 'Username', 'trim|required',[
+        $this->form_validation->set_rules('username', 'Username', 'trim|required', [
             'required'      => 'Email tidak boleh kosong!'
         ]);
-        $this->form_validation->set_rules('password', 'Password', 'trim|required',[
+        $this->form_validation->set_rules('password', 'Password', 'trim|required', [
             'required'      => 'Password tidak boleh kosong!'
         ]);
-        
+
         if ($this->form_validation->run() == FALSE) {
             $data['title']  = "Login Page";
-    
+
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
         } else {
             $this->_login();
         }
-        
     }
 
-    private function _login() {
+    private function _login()
+    {
         $username   = $this->input->post('username');
         $password   = $this->input->post('password');
         $user       = $this->db->get_where('user', ['username' => $username])->row_array();
-        
+
         // Jika user ada
         if ($user) {
             // Jika user aktif
@@ -57,25 +58,31 @@ class Auth extends CI_Controller {
                         redirect('user');
                     }
                 } else {
-                    $this->session->set_flashdata('message', 
-                    '<div class="alert alert-danger" role="alert">
+                    $this->session->set_flashdata(
+                        'message',
+                        '<div class="alert alert-danger" role="alert">
                     Oops! Password salah.
-                    </div>');
+                    </div>'
+                    );
                     redirect('auth');
                 }
             } else {
-                $this->session->set_flashdata('message', 
-                '<div class="alert alert-danger" role="alert">
+                $this->session->set_flashdata(
+                    'message',
+                    '<div class="alert alert-danger" role="alert">
                 Oops! Akun tidak aktif. Silahkan hubungi admin.
-                </div>');
+                </div>'
+                );
                 redirect('auth');
             }
         } else {
             //Tidak ada user
-            $this->session->set_flashdata('message', 
-            '<div class="alert alert-danger" role="alert">
+            $this->session->set_flashdata(
+                'message',
+                '<div class="alert alert-danger" role="alert">
             Oops! Akun tidak terdaftar.
-            </div>');
+            </div>'
+            );
             redirect('auth');
         }
     }
@@ -84,24 +91,23 @@ class Auth extends CI_Controller {
     {
         $this->session->unset_userdata('username');
         $this->session->unset_userdata('role_id');
-        $this->session->set_flashdata('message', 
+        $this->session->set_flashdata(
+            'message',
             '<div class="alert alert-success" role="alert">
             Berhasil logout!
-            </div>');
+            </div>'
+        );
         redirect('auth');
     }
 
     public function block()
     {
         $data['title'] = 'Akses ditolak!';
-        
+
         $this->load->view('templates/header', $data);
         $this->load->view('auth/block');
         $this->load->view('templates/footer');
     }
-
 }
 
 /* End of file Auth.php */
-
-?>

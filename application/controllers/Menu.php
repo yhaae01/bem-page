@@ -89,5 +89,3 @@ class Menu extends CI_Controller {
 }
 
 /* End of file Menu.php */
-
-?>

@@ -26,5 +26,3 @@ class Content extends CI_Controller {
 }
 
 /* End of file Content.php */
-
-?>

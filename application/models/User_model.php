@@ -57,5 +57,3 @@ class User_model extends CI_Model {
 }
 
 /* End of file User_model.php */
-
-?>
