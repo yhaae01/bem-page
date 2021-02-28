@@ -1,0 +1,16 @@
+galeri (proker)
+- id
+- judul
+- url
+- isi
+- gambar
+- created_at
+
+susunan kepengurusan
+(masing - masing tampilan beda tabel)
+
+- id
+- nama
+- posisi
+- gambar
+- created_at
