@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 27, 2021 at 01:06 PM
+-- Generation Time: Mar 03, 2021 at 03:20 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.8
 
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_bem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_bph`
+--
+
+CREATE TABLE `tb_bph` (
+  `id` int(11) NOT NULL,
+  `nm_ketua` varchar(100) NOT NULL,
+  `img_ketua` varchar(255) NOT NULL,
+  `nm_wakil` varchar(100) NOT NULL,
+  `img_wakil` varchar(255) NOT NULL,
+  `nm_anggota1` varchar(100) NOT NULL,
+  `img_anggota1` varchar(255) NOT NULL,
+  `nm_anggota2` varchar(100) NOT NULL,
+  `img_anggota2` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -90,7 +108,7 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Admin'),
 (2, 'User'),
 (3, 'Menu'),
-(4, 'Content');
+(4, 'Susunan Kepengurusan');
 
 -- --------------------------------------------------------
 
@@ -139,11 +157,26 @@ INSERT INTO `user_submenu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`
 (6, 1, 'Kelola User', 'admin/manageUser', 'fas fa-fw fa-users', 1),
 (7, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
 (10, 2, 'Ubah Password', 'user/changepassword', 'fas fa-fw fa-key', 1),
-(11, 4, 'Visi Misi', 'content/visimisi', 'fas fa-fw fa-check', 1);
+(11, 0, 'Badan Pengurus Harian', 'home/bph', 'fas fa-fw fa-check', 1),
+(12, 0, 'Badan Pengurus Harian', 'content/bph', 'fas fa-fw fa-folder', 1),
+(13, 4, 'Badan Pengurus Harian', 'content/bph', 'fas fa-fw fa-folder', 1),
+(14, 4, 'Kementrian Ekonomi', 'content/kemenko', 'fas fa-fw fa-folder', 1),
+(15, 4, 'Kementrian Agama', 'content/kemenag', 'fas fa-fw fa-folder', 1),
+(16, 4, 'Kementrian Olahraga', 'content/kemenor', 'fas fa-fw fa-folder', 1),
+(17, 4, 'Kementrian Dalam Negeri', 'content/kemendagri', 'fas fa-fw fa-folder', 1),
+(18, 4, 'Kementrian Pendidikan & Budaya', 'content/kemendikbud', 'fas fa-fw fa-folder', 1),
+(19, 4, 'Kementrian Luar Negeri', 'content/kemenlu', 'fas fa-fw fa-folder', 1),
+(20, 4, 'Kementrian Komunikasi & Informatika', 'content/kemenkominfo', 'fas fa-fw fa-folder', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tb_bph`
+--
+ALTER TABLE `tb_bph`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user`
@@ -180,6 +213,12 @@ ALTER TABLE `user_submenu`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_bph`
+--
+ALTER TABLE `tb_bph`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
@@ -207,7 +246,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_submenu`
 --
 ALTER TABLE `user_submenu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
