@@ -5,6 +5,7 @@
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
     <?= $this->session->flashdata('message'); ?>
+    <a href="#" class="btn btn-danger mb-3 btn-sm" data-toggle="modal" data-target="#trunBph"><span class="fas fa-trash"></span> Hapus Data</a>
     <div class="row">
         <div class="col-md-6">
             <!-- Insert ketua -->
@@ -20,7 +21,7 @@
                         <label for="">Foto Ketua</label>
                         <input type="file" name="img_ketua">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Simpan</button>
                     </form>
                 </div>
             </div>
@@ -38,7 +39,7 @@
                         <label for="">Foto Wakil</label>
                         <input type="file" name="img_wakil" multiple="multiple">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Simpan</button>
                     </form>
                 </div>
             </div>
@@ -57,7 +58,7 @@
                         <label for="">Foto Anggota</label>
                         <input type="file" name="img_anggota1">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Simpan</button>
                     </form>
                 </div>
             </div>
@@ -75,7 +76,7 @@
                         <label for="">Foto Anggota</label>
                         <input type="file" name="img_anggota2">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Simpan</button>
                     </form>
                 </div>
             </div>
@@ -88,3 +89,24 @@
 
 </div>
 <!-- End of Main Content -->
+
+<!-- Modal Truncate -->
+<div class="modal fade" id="trunBph" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Hapus Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Yakin ingin hapus semua data?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
+                <a href="<?= base_url('content/trunBph'); ?>" class="btn btn-outline-secondary">Ya, hapus</a>
+            </div>
+        </div>
+    </div>
+</div>

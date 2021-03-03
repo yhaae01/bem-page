@@ -152,6 +152,11 @@ class Content extends CI_Controller
         }
     }
 
+    public function trunBph()
+    {
+        $this->content->trunBph();
+    }
+
     public function kemenko()
     {
         $data['title'] = 'Kementrian Ekonomi';

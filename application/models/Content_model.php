@@ -79,6 +79,18 @@ class Content_model extends CI_Model
         );
         redirect('content/bph');
     }
+
+    public function trunBph()
+    {
+        $this->db->truncate('tb_bph');
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
+            Data berhasil dihapus.
+            </div>'
+        );
+        redirect('content/bph');
+    }
 }
 
 /* End of file Content_model.php */
