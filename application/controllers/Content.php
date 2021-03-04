@@ -26,7 +26,7 @@ class Content extends CI_Controller
 
     public function insertKetuaBph()
     {
-        $this->form_validation->set_rules('nm_ketua', 'Nama Ketua', 'trim|required', [
+        $this->form_validation->set_rules('name', 'Nama Ketua', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -50,8 +50,13 @@ class Content extends CI_Controller
             $this->load->view('home/bph', $data);
             $this->load->view('templates/footer');
         } else {
-            if (!$this->upload->do_upload('img_ketua')) {
-                echo 'eror';
+            if (!$this->upload->do_upload('image')) {
+                $this->session->set_flashdata(
+                    'message',
+                    '<div class="alert alert-danger" role="alert">
+                    Oops! Terjadi suatu kesalahan.
+                    </div>'
+                );
             } else {
                 $this->content->insertKetuaBph();
             }
@@ -60,7 +65,7 @@ class Content extends CI_Controller
 
     public function insertWakilBph()
     {
-        $this->form_validation->set_rules('nm_wakil', 'Nama Wakil', 'trim|required', [
+        $this->form_validation->set_rules('name', 'Nama Wakil', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -84,8 +89,13 @@ class Content extends CI_Controller
             $this->load->view('home/bph', $data);
             $this->load->view('templates/footer');
         } else {
-            if (!$this->upload->do_upload('img_wakil')) {
-                echo 'eror';
+            if (!$this->upload->do_upload('image')) {
+                $this->session->set_flashdata(
+                    'message',
+                    '<div class="alert alert-danger" role="alert">
+                    Oops! Terjadi suatu kesalahan.
+                    </div>'
+                );
             } else {
                 $this->content->insertWakilBph();
             }
@@ -94,7 +104,7 @@ class Content extends CI_Controller
 
     public function insertAnggota1Bph()
     {
-        $this->form_validation->set_rules('nm_anggota1', 'Nama anggota1', 'trim|required', [
+        $this->form_validation->set_rules('name', 'Nama Anggota 1', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -108,7 +118,7 @@ class Content extends CI_Controller
 
         $this->load->library('upload', $config);
 
-        if (!$this->upload->do_upload('img_anggota1')) {
+        if ($this->form_validation->run() == FALSE) {
             $data['title'] = 'Badan Pengurus Harian';
             $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
 
@@ -118,13 +128,22 @@ class Content extends CI_Controller
             $this->load->view('home/bph', $data);
             $this->load->view('templates/footer');
         } else {
-            $this->content->insertAnggota1Bph();
+            if (!$this->upload->do_upload('image')) {
+                $this->session->set_flashdata(
+                    'message',
+                    '<div class="alert alert-danger" role="alert">
+                    Oops! Terjadi suatu kesalahan.
+                    </div>'
+                );
+            } else {
+                $this->content->insertAnggota1Bph();
+            }
         }
     }
 
     public function insertAnggota2Bph()
     {
-        $this->form_validation->set_rules('nm_anggota2', 'Nama anggota2', 'trim|required', [
+        $this->form_validation->set_rules('name', 'Nama Anggota 2', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -138,7 +157,7 @@ class Content extends CI_Controller
 
         $this->load->library('upload', $config);
 
-        if (!$this->upload->do_upload('img_anggota2')) {
+        if ($this->form_validation->run() == FALSE) {
             $data['title'] = 'Badan Pengurus Harian';
             $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
 
@@ -148,7 +167,16 @@ class Content extends CI_Controller
             $this->load->view('home/bph', $data);
             $this->load->view('templates/footer');
         } else {
-            $this->content->insertAnggota2Bph();
+            if (!$this->upload->do_upload('image')) {
+                $this->session->set_flashdata(
+                    'message',
+                    '<div class="alert alert-danger" role="alert">
+                    Oops! Terjadi suatu kesalahan.
+                    </div>'
+                );
+            } else {
+                $this->content->insertAnggota2Bph();
+            }
         }
     }
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 03, 2021 at 03:20 AM
--- Server version: 5.7.24
--- PHP Version: 7.4.8
+-- Generation Time: Mar 04, 2021 at 11:59 AM
+-- Server version: 10.5.9-MariaDB-log
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,15 +29,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tb_bph` (
   `id` int(11) NOT NULL,
-  `nm_ketua` varchar(100) NOT NULL,
-  `img_ketua` varchar(255) NOT NULL,
-  `nm_wakil` varchar(100) NOT NULL,
-  `img_wakil` varchar(255) NOT NULL,
-  `nm_anggota1` varchar(100) NOT NULL,
-  `img_anggota1` varchar(255) NOT NULL,
-  `nm_anggota2` varchar(100) NOT NULL,
-  `img_anggota2` varchar(255) NOT NULL
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_bph`
+--
+
+INSERT INTO `tb_bph` (`id`, `name`, `image`, `position`) VALUES
+(1, 'surya', 'bph_1614859033.jpg', 'ketua'),
+(2, 'aldi', 'bph_1614859053.jpg', 'wakil'),
+(3, 'ahmad', 'bph_1614859071.jpg', 'anggota 1'),
+(4, 'eka', 'bph_1614859080.jpg', 'anggota 2');
 
 -- --------------------------------------------------------
 
@@ -216,7 +221,7 @@ ALTER TABLE `user_submenu`
 -- AUTO_INCREMENT for table `tb_bph`
 --
 ALTER TABLE `tb_bph`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user`

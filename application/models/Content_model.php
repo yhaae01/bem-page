@@ -9,15 +9,16 @@ class Content_model extends CI_Model
         $gambar = $this->upload->data();
 
         $data = [
-            'nm_ketua' => $this->input->post('nm_ketua'),
-            'img_ketua' => $gambar['file_name']
+            'name' => $this->input->post('name'),
+            'image' => $gambar['file_name'],
+            'position' => 'ketua'
         ];
 
         $this->db->insert('tb_bph', $data);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data berhasil ditambahkan.
+            Data ketua berhasil ditambahkan.
             </div>'
         );
         redirect('content/bph');
@@ -28,15 +29,16 @@ class Content_model extends CI_Model
         $gambar = $this->upload->data();
 
         $data = [
-            'nm_wakil' => $this->input->post('nm_wakil'),
-            'img_wakil' => $gambar['file_name']
+            'name' => $this->input->post('name'),
+            'image' => $gambar['file_name'],
+            'position' => 'wakil'
         ];
 
         $this->db->insert('tb_bph', $data);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data berhasil ditambahkan.
+            Data wakil berhasil ditambahkan.
             </div>'
         );
         redirect('content/bph');
@@ -47,15 +49,16 @@ class Content_model extends CI_Model
         $gambar = $this->upload->data();
 
         $data = [
-            'nm_anggota1' => $this->input->post('nm_anggota1'),
-            'img_anggota1' => $gambar['file_name']
+            'name' => $this->input->post('name'),
+            'image' => $gambar['file_name'],
+            'position' => 'anggota 1'
         ];
 
         $this->db->insert('tb_bph', $data);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data berhasil ditambahkan.
+            Data anggota 1 berhasil ditambahkan.
             </div>'
         );
         redirect('content/bph');
@@ -66,15 +69,16 @@ class Content_model extends CI_Model
         $gambar = $this->upload->data();
 
         $data = [
-            'nm_anggota2' => $this->input->post('nm_anggota2'),
-            'img_anggota2' => $gambar['file_name']
+            'name' => $this->input->post('name'),
+            'image' => $gambar['file_name'],
+            'position' => 'anggota 2'
         ];
 
         $this->db->insert('tb_bph', $data);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data berhasil ditambahkan.
+            Data anggota 2 berhasil ditambahkan.
             </div>'
         );
         redirect('content/bph');
