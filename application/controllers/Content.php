@@ -242,4 +242,18 @@ class Content extends CI_Controller
     }
 }
 
+// if ($this->upload->do_upload('image')) {
+//     $old_image = $data['data']['cover'];
+//     if($old_image != NULL ){
+//         unlink(FCPATH . '/assets/img/cover/' . $old_image);
+//     }
+
+//     $new_image = $this->upload->data('file_name');
+
+//     $this->db->set('cover', $new_image);        
+// }
+// else{
+//     echo $this->upload->display_errors();                    
+// }
+
 /* End of file Content.php */

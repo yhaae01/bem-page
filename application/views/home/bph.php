@@ -74,9 +74,12 @@
                     </div>
                     <div class="form-group">
                         <label for="">Foto Anggota</label>
-                        <input type="file" name="img_anggota2">
+                        <div class="custom-file mb-2">
+                            <input type="file" name="img_anggota2" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Simpan</button>
+                    <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                     </form>
                 </div>
             </div>
