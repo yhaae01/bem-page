@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 04, 2021 at 11:59 AM
--- Server version: 10.5.9-MariaDB-log
--- PHP Version: 7.4.15
+-- Generation Time: Mar 06, 2021 at 09:35 AM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,8 +41,148 @@ CREATE TABLE `tb_bph` (
 INSERT INTO `tb_bph` (`id`, `name`, `image`, `position`) VALUES
 (1, 'surya', 'bph_1614859033.jpg', 'ketua'),
 (2, 'aldi', 'bph_1614859053.jpg', 'wakil'),
-(3, 'ahmad', 'bph_1614859071.jpg', 'anggota 1'),
-(4, 'eka', 'bph_1614859080.jpg', 'anggota 2');
+(3, 'ahmad', 'bph_1614859071.jpg', 'anggota'),
+(4, 'eka', 'bph_1614859080.jpg', 'anggota');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemenag`
+--
+
+CREATE TABLE `tb_kemenag` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemenag`
+--
+
+INSERT INTO `tb_kemenag` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemenag_1615022120.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemendagri`
+--
+
+CREATE TABLE `tb_kemendagri` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemendagri`
+--
+
+INSERT INTO `tb_kemendagri` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemendagri_1615022405.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemendikbud`
+--
+
+CREATE TABLE `tb_kemendikbud` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemendikbud`
+--
+
+INSERT INTO `tb_kemendikbud` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemendikbud_1615022521.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemenko`
+--
+
+CREATE TABLE `tb_kemenko` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemenko`
+--
+
+INSERT INTO `tb_kemenko` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemenko_1615022031.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemenkominfo`
+--
+
+CREATE TABLE `tb_kemenkominfo` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemenkominfo`
+--
+
+INSERT INTO `tb_kemenkominfo` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemenkominfo_1615022657.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemenlu`
+--
+
+CREATE TABLE `tb_kemenlu` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemenlu`
+--
+
+INSERT INTO `tb_kemenlu` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemenlu_1615022643.png', 'ketua');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_kemenor`
+--
+
+CREATE TABLE `tb_kemenor` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `position` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kemenor`
+--
+
+INSERT INTO `tb_kemenor` (`id`, `name`, `image`, `position`) VALUES
+(1, 'eka wardana', 'kemenor_1615022330.png', 'ketua');
 
 -- --------------------------------------------------------
 
@@ -184,6 +324,48 @@ ALTER TABLE `tb_bph`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tb_kemenag`
+--
+ALTER TABLE `tb_kemenag`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemendagri`
+--
+ALTER TABLE `tb_kemendagri`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemendikbud`
+--
+ALTER TABLE `tb_kemendikbud`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemenko`
+--
+ALTER TABLE `tb_kemenko`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemenkominfo`
+--
+ALTER TABLE `tb_kemenkominfo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemenlu`
+--
+ALTER TABLE `tb_kemenlu`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_kemenor`
+--
+ALTER TABLE `tb_kemenor`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -222,6 +404,48 @@ ALTER TABLE `user_submenu`
 --
 ALTER TABLE `tb_bph`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `tb_kemenag`
+--
+ALTER TABLE `tb_kemenag`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemendagri`
+--
+ALTER TABLE `tb_kemendagri`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemendikbud`
+--
+ALTER TABLE `tb_kemendikbud`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemenko`
+--
+ALTER TABLE `tb_kemenko`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemenkominfo`
+--
+ALTER TABLE `tb_kemenkominfo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemenlu`
+--
+ALTER TABLE `tb_kemenlu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tb_kemenor`
+--
+ALTER TABLE `tb_kemenor`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
