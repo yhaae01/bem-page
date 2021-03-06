@@ -15,12 +15,24 @@ class Gallery extends CI_Controller
     {
         $data['title'] = 'Artikel';
         $data['user']  = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        $data['users'] = $this->db->get('tb_article')->result_array();
+        $data['articles'] = $this->db->get('tb_article')->result_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('gallery/dataArticle', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function createArticle()
+    {
+        $data['title'] = 'Tambah Artikel';
+        $data['user']  = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('gallery/createArticle', $data);
         $this->load->view('templates/footer');
     }
 
