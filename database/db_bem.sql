@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 06, 2021 at 09:35 AM
--- Server version: 5.7.24
--- PHP Version: 7.4.8
+-- Generation Time: Mar 06, 2021 at 03:02 PM
+-- Server version: 10.5.9-MariaDB-log
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_bem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_article`
+--
+
+CREATE TABLE `tb_article` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `cover` varchar(255) DEFAULT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `author` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_article`
+--
+
+INSERT INTO `tb_article` (`id`, `title`, `content`, `url`, `cover`, `date`, `author`) VALUES
+(1, 'Judul Pertama', '<p>Isi konten dari judul pertama</p>', 'judul-pertama', 'Tugu-Kujang.jpg', '2021-03-06 14:55:29', '3');
 
 -- --------------------------------------------------------
 
@@ -232,7 +255,8 @@ INSERT INTO `user_accessmenu` (`id`, `role_id`, `menu_id`) VALUES
 (3, 2, 2),
 (4, 1, 3),
 (5, 1, 4),
-(6, 2, 4);
+(6, 2, 4),
+(7, 1, 5);
 
 -- --------------------------------------------------------
 
@@ -253,7 +277,8 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Admin'),
 (2, 'User'),
 (3, 'Menu'),
-(4, 'Susunan Kepengurusan');
+(4, 'Susunan Kepengurusan'),
+(5, 'Gallery');
 
 -- --------------------------------------------------------
 
@@ -311,11 +336,19 @@ INSERT INTO `user_submenu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`
 (17, 4, 'Kementrian Dalam Negeri', 'content/kemendagri', 'fas fa-fw fa-folder', 1),
 (18, 4, 'Kementrian Pendidikan & Budaya', 'content/kemendikbud', 'fas fa-fw fa-folder', 1),
 (19, 4, 'Kementrian Luar Negeri', 'content/kemenlu', 'fas fa-fw fa-folder', 1),
-(20, 4, 'Kementrian Komunikasi & Informatika', 'content/kemenkominfo', 'fas fa-fw fa-folder', 1);
+(20, 4, 'Kementrian Komunikasi & Informatika', 'content/kemenkominfo', 'fas fa-fw fa-folder', 1),
+(21, 5, 'Artikel', 'gallery/article', 'fas fa-fw fa-folder', 1),
+(22, 5, 'Program Kerja', 'gallery/proker', 'fas fa-fw fa-folder', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tb_article`
+--
+ALTER TABLE `tb_article`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tb_bph`
@@ -400,6 +433,12 @@ ALTER TABLE `user_submenu`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_article`
+--
+ALTER TABLE `tb_article`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `tb_bph`
 --
 ALTER TABLE `tb_bph`
@@ -457,13 +496,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_accessmenu`
 --
 ALTER TABLE `user_accessmenu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_role`
@@ -475,7 +514,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_submenu`
 --
 ALTER TABLE `user_submenu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
