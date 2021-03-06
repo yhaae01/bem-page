@@ -15,7 +15,8 @@ class Content extends CI_Controller
     public function bph()
     {
         $data['title'] = 'Badan Pengurus Harian';
-        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['user']  = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_bph')->result_array();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -24,9 +25,9 @@ class Content extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function insertKetuaBph()
+    public function insertBph()
     {
-        $this->form_validation->set_rules('name', 'Nama Ketua', 'trim|required', [
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -58,131 +59,61 @@ class Content extends CI_Controller
                     </div>'
                 );
             } else {
-                $this->content->insertKetuaBph();
+                $this->content->insertBph();
             }
         }
     }
 
-    public function insertWakilBph()
+    public function editBph()
     {
-        $this->form_validation->set_rules('name', 'Nama Wakil', 'trim|required', [
+        $data['title']  = 'Badan Pengurus Harian';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
-        $nama = 'bph_' . time();
-        $config['upload_path'] = './assets/img/bph/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size']  = '2000';
-        $config['max_width']  = '2000';
-        $config['max_height']  = '2000';
-        $config['file_name'] = $nama;
-
-        $this->load->library('upload', $config);
-
         if ($this->form_validation->run() == FALSE) {
-            $data['title'] = 'Badan Pengurus Harian';
-            $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
-            $this->load->view('home/bph', $data);
+            $this->load->view('content/bph', $data);
             $this->load->view('templates/footer');
         } else {
-            if (!$this->upload->do_upload('image')) {
-                $this->session->set_flashdata(
-                    'message',
-                    '<div class="alert alert-danger" role="alert">
-                    Oops! Terjadi suatu kesalahan.
-                    </div>'
-                );
-            } else {
-                $this->content->insertWakilBph();
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'bph_' . time();
+                $config['upload_path'] = './assets/img/bph/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) { // ngambil dari name img
+                    $oldImage = $data['tb_bph']['image']; // ngambil dari data diatas, tabel user field image
+                    if ($oldImage != 'default.png') {
+                        unlink(FCPATH . 'assets/img/bph/' . $oldImage);
+                    }
+                    $newImage = $this->upload->data('file_name');
+                    $this->db->set('image', $newImage);
+                } else {
+                    echo $this->upload->display_errors();
+                }
             }
+
+            // hanya ubah nama
+            $this->content->editBph();
         }
     }
 
-    public function insertAnggota1Bph()
+    public function deleteBph($id)
     {
-        $this->form_validation->set_rules('name', 'Nama Anggota 1', 'trim|required', [
-            'required' => 'Nama harus diisi!'
-        ]);
-
-        $nama = 'bph_' . time();
-        $config['upload_path'] = './assets/img/bph/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size']  = '2000';
-        $config['max_width']  = '2000';
-        $config['max_height']  = '2000';
-        $config['file_name'] = $nama;
-
-        $this->load->library('upload', $config);
-
-        if ($this->form_validation->run() == FALSE) {
-            $data['title'] = 'Badan Pengurus Harian';
-            $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
-            $this->load->view('home/bph', $data);
-            $this->load->view('templates/footer');
-        } else {
-            if (!$this->upload->do_upload('image')) {
-                $this->session->set_flashdata(
-                    'message',
-                    '<div class="alert alert-danger" role="alert">
-                    Oops! Terjadi suatu kesalahan.
-                    </div>'
-                );
-            } else {
-                $this->content->insertAnggota1Bph();
-            }
-        }
-    }
-
-    public function insertAnggota2Bph()
-    {
-        $this->form_validation->set_rules('name', 'Nama Anggota 2', 'trim|required', [
-            'required' => 'Nama harus diisi!'
-        ]);
-
-        $nama = 'bph_' . time();
-        $config['upload_path'] = './assets/img/bph/';
-        $config['allowed_types'] = 'gif|jpg|png';
-        $config['max_size']  = '2000';
-        $config['max_width']  = '2000';
-        $config['max_height']  = '2000';
-        $config['file_name'] = $nama;
-
-        $this->load->library('upload', $config);
-
-        if ($this->form_validation->run() == FALSE) {
-            $data['title'] = 'Badan Pengurus Harian';
-            $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-
-            $this->load->view('templates/header', $data);
-            $this->load->view('templates/sidebar', $data);
-            $this->load->view('templates/topbar', $data);
-            $this->load->view('home/bph', $data);
-            $this->load->view('templates/footer');
-        } else {
-            if (!$this->upload->do_upload('image')) {
-                $this->session->set_flashdata(
-                    'message',
-                    '<div class="alert alert-danger" role="alert">
-                    Oops! Terjadi suatu kesalahan.
-                    </div>'
-                );
-            } else {
-                $this->content->insertAnggota2Bph();
-            }
-        }
-    }
-
-    public function trunBph()
-    {
-        $this->content->trunBph();
+        $this->content->deleteBph($id);
     }
 
     public function kemenko()
@@ -269,19 +200,5 @@ class Content extends CI_Controller
         $this->load->view('templates/footer');
     }
 }
-
-// if ($this->upload->do_upload('image')) {
-//     $old_image = $data['data']['cover'];
-//     if($old_image != NULL ){
-//         unlink(FCPATH . '/assets/img/cover/' . $old_image);
-//     }
-
-//     $new_image = $this->upload->data('file_name');
-
-//     $this->db->set('cover', $new_image);        
-// }
-// else{
-//     echo $this->upload->display_errors();                    
-// }
 
 /* End of file Content.php */

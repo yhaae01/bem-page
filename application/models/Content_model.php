@@ -4,14 +4,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Content_model extends CI_Model
 {
-    public function insertKetuaBph()
+    public function insertBph()
     {
         $gambar = $this->upload->data();
 
         $data = [
             'name' => $this->input->post('name'),
             'image' => $gambar['file_name'],
-            'position' => 'ketua'
+            'position' => $this->input->post('position')
         ];
 
         $this->db->insert('tb_bph', $data);
@@ -24,73 +24,33 @@ class Content_model extends CI_Model
         redirect('content/bph');
     }
 
-    public function insertWakilBph()
+    public function editBph()
     {
-        $gambar = $this->upload->data();
+        $id         = $this->input->post('id');
+        $name       = $this->input->post('name');
+        $position   = $this->input->post('position');
 
-        $data = [
-            'name' => $this->input->post('name'),
-            'image' => $gambar['file_name'],
-            'position' => 'wakil'
-        ];
+        $this->db->set('name', $name);
+        $this->db->set('position', $position);
+        $this->db->where('id', $id);
+        $this->db->update('tb_bph');
 
-        $this->db->insert('tb_bph', $data);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data wakil berhasil ditambahkan.
-            </div>'
+        Berhasil diubah!
+        </div>'
         );
         redirect('content/bph');
     }
 
-    public function insertAnggota1Bph()
+    public function deleteBph($id)
     {
-        $gambar = $this->upload->data();
-
-        $data = [
-            'name' => $this->input->post('name'),
-            'image' => $gambar['file_name'],
-            'position' => 'anggota 1'
-        ];
-
-        $this->db->insert('tb_bph', $data);
+        $this->db->delete('tb_bph', ['id' => $id]);
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data anggota 1 berhasil ditambahkan.
-            </div>'
-        );
-        redirect('content/bph');
-    }
-
-    public function insertAnggota2Bph()
-    {
-        $gambar = $this->upload->data();
-
-        $data = [
-            'name' => $this->input->post('name'),
-            'image' => $gambar['file_name'],
-            'position' => 'anggota 2'
-        ];
-
-        $this->db->insert('tb_bph', $data);
-        $this->session->set_flashdata(
-            'message',
-            '<div class="alert alert-success" role="alert">
-            Data anggota 2 berhasil ditambahkan.
-            </div>'
-        );
-        redirect('content/bph');
-    }
-
-    public function trunBph()
-    {
-        $this->db->truncate('tb_bph');
-        $this->session->set_flashdata(
-            'message',
-            '<div class="alert alert-success" role="alert">
-            Data berhasil dihapus.
+            User berhasil dihapus.
             </div>'
         );
         redirect('content/bph');
