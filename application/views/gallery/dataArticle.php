@@ -25,9 +25,9 @@
                     <?php foreach ($articles as $article) : ?>
                         <tr>
                             <th scope="row"><?= $i; ?></th>
-                            <td><?= ucwords($article['name']); ?></td>
-                            <td><img src="<?= base_url('assets/img/bph/') . $article['image']; ?>" height="50"></td>
-                            <td><?= ucwords($article['position']); ?></td>
+                            <td><img src="<?= base_url('assets/img/cover/') . $article['cover']; ?>" height="50"></td>
+                            <td><?= ucwords($article['title']); ?></td>
+                            <td><?= ucwords($article['author']); ?></td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#ubahUser<?= $article['id']; ?>" class="badge badge-warning">ubah</a>
                                 <a href="#" data-toggle="modal" data-target="#hapusUser<?= $article['id']; ?>" class="badge badge-danger">hapus</a>

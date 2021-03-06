@@ -26,14 +26,45 @@ class Gallery extends CI_Controller
 
     public function createArticle()
     {
-        $data['title'] = 'Tambah Artikel';
         $data['user']  = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
 
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
-        $this->load->view('gallery/createArticle', $data);
-        $this->load->view('templates/footer');
+        $this->form_validation->set_rules('title', 'Judul', 'trim|required');
+        $this->form_validation->set_rules('content', 'Isi Konten', 'trim|required');
+        $this->form_validation->set_rules('url', 'Url', 'trim|required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $data['title'] = 'Tambah Artikel';
+
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('gallery/createArticle', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $article['title'] = $this->input->post('title');
+            $article['content'] = $this->input->post('content');
+            $article['url'] = $this->input->post('url');
+            date_default_timezone_set('Asia/Jakarta');
+            $article['date'] = date('Y-m-d H:i:s');
+            $article['author'] = $data['user']['id'];
+
+            $config['allowed_types'] = 'gif|jpg|png|svg';
+            $config['max_size'] = '2048';
+            $config['upload_path'] = './assets/img/cover/';
+
+            $this->load->library('upload', $config);
+
+            if (!$this->upload->do_upload('image')) {
+                var_dump('gagal');
+                die;
+            } else {
+                $article['cover'] = $this->upload->data()['file_name'];
+            }
+
+            $this->db->insert('tb_article', $article);
+            $this->session->set_flashdata('message', '<div class="alert alert-success">Tambah Article berhasil</div>');
+            redirect('gallery/article');
+        }
     }
 
     public function tampilArticle()
