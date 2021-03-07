@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Menu extends CI_Controller {
+class Menu extends CI_Controller
+{
 
     public function __construct()
     {
@@ -10,7 +11,7 @@ class Menu extends CI_Controller {
         $this->load->model('Menu_model', 'menu');
         is_login();
     }
-    
+
 
     public function index()
     {
@@ -18,7 +19,7 @@ class Menu extends CI_Controller {
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['menu']   = $this->db->get('user_menu')->result_array();
 
-        $this->form_validation->set_rules('menu', 'Menu', 'trim|required',[
+        $this->form_validation->set_rules('menu', 'Menu', 'trim|required', [
             'required'  => 'Menu harus diisi!'
         ]);
 
@@ -39,22 +40,22 @@ class Menu extends CI_Controller {
 
         $data['title']  = 'Pengelolaan Submenu';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        $data['subMenu']= $this->menu->getsubMenu();
+        $data['subMenu'] = $this->menu->getsubMenu();
         $data['menu']   = $this->db->get('user_menu')->result_array();
 
-        $this->form_validation->set_rules('title', 'Title', 'trim|required',[
+        $this->form_validation->set_rules('title', 'Title', 'trim|required', [
             'required'  => 'Title harus diisi!'
         ]);
-        $this->form_validation->set_rules('menu_id', 'Menu', 'trim|required',[
+        $this->form_validation->set_rules('menu_id', 'Menu', 'trim|required', [
             'required'  => 'Menu harus diisi!'
         ]);
-        $this->form_validation->set_rules('url', 'Url', 'trim|required',[
+        $this->form_validation->set_rules('url', 'Url', 'trim|required', [
             'required'  => 'Url harus diisi!'
         ]);
-        $this->form_validation->set_rules('icon', 'Icon', 'trim|required',[
+        $this->form_validation->set_rules('icon', 'Icon', 'trim|required', [
             'required'  => 'Icon harus diisi!'
         ]);
-        
+
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
@@ -85,7 +86,6 @@ class Menu extends CI_Controller {
     {
         $this->menu->updateSubmenu($id);
     }
-
 }
 
 /* End of file Menu.php */

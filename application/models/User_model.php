@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class User_model extends CI_Model {
+class User_model extends CI_Model
+{
 
     public function editProfile()
     {
@@ -11,11 +12,13 @@ class User_model extends CI_Model {
         $this->db->set('name', $name);
         $this->db->where('username', $username);
         $this->db->update('user');
-        
-        $this->session->set_flashdata('message', 
-        '<div class="alert alert-success" role="alert">
+
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
         Berhasil diubah!
-        </div>');
+        </div>'
+        );
         redirect('user');
     }
 
@@ -53,7 +56,6 @@ class User_model extends CI_Model {
             }
         }
     }
-
 }
 
 /* End of file User_model.php */

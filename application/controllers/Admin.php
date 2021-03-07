@@ -1,8 +1,9 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
-    
+class Admin extends CI_Controller
+{
+
     public function __construct()
     {
         parent::__construct();
@@ -15,7 +16,7 @@ class Admin extends CI_Controller {
     {
         $data['title']  = 'Dashboard';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
@@ -28,17 +29,17 @@ class Admin extends CI_Controller {
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['users']  = $this->db->get_where('user', ['role_id' => 2])->result_array();
 
-        $this->form_validation->set_rules('name', 'Nama', 'trim|required',[
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
             'required'      => 'Nama harus diisi!'
         ]);
-        $this->form_validation->set_rules('username', 'username', 'trim|required|is_unique[user.username]',[
+        $this->form_validation->set_rules('username', 'username', 'trim|required|is_unique[user.username]', [
             'required'      => 'username harus diisi!',
             'is_unique'     => 'username sudah digunakan!'
         ]);
-        
+
         if ($this->form_validation->run() == FALSE) {
             $data['title']  = 'Kelola User';
-            
+
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
@@ -60,7 +61,7 @@ class Admin extends CI_Controller {
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['role']   = $this->db->get('user_role')->result_array();
 
-        $this->form_validation->set_rules('role', 'Role', 'trim|required',[
+        $this->form_validation->set_rules('role', 'Role', 'trim|required', [
             'required'  => 'Role harus diisi!'
         ]);
 
@@ -90,8 +91,8 @@ class Admin extends CI_Controller {
         $data['title']  = 'Akses Role';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['role']   = $this->db->get_where('user_role', ['id' => $role_id])->row_array();
-        
-        $this->db->where('id !='. 1);
+
+        $this->db->where('id !=' . 1);
         $data['menu']   = $this->db->get('user_menu')->result_array();
 
         $this->load->view('templates/header', $data);
@@ -119,12 +120,13 @@ class Admin extends CI_Controller {
             $this->db->delete('user_accessmenu', $data);
         }
 
-        $this->session->set_flashdata('message', 
-        '<div class="alert alert-success" role="alert">
+        $this->session->set_flashdata(
+            'message',
+            '<div class="alert alert-success" role="alert">
         Berhasil ubah role!
-        </div>');
+        </div>'
+        );
     }
-
 }
 
 /* End of file Admin.php */

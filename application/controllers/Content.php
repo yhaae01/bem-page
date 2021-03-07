@@ -66,6 +66,12 @@ class Content extends CI_Controller
 
     public function deleteBph($id)
     {
+        $prevImage  = $this->db->get_where('tb_bph', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/bph/' . $prevImage);
+        }
         $this->content->deleteBph($id);
     }
 
@@ -170,6 +176,12 @@ class Content extends CI_Controller
 
     public function deleteKemenko($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemenko', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemenko/' . $prevImage);
+        }
         $this->content->deleteKemenko($id);
     }
 
@@ -227,6 +239,12 @@ class Content extends CI_Controller
 
     public function deletekemenag($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemenag', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemenag/' . $prevImage);
+        }
         $this->content->deletekemenag($id);
     }
 
@@ -284,6 +302,12 @@ class Content extends CI_Controller
 
     public function deletekemenor($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemenor', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemenor/' . $prevImage);
+        }
         $this->content->deletekemenor($id);
     }
 
@@ -341,6 +365,12 @@ class Content extends CI_Controller
 
     public function deletekemendagri($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemendagri', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemendagri/' . $prevImage);
+        }
         $this->content->deletekemendagri($id);
     }
 
@@ -398,6 +428,12 @@ class Content extends CI_Controller
 
     public function deletekemendikbud($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemendikbud', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemendikbud/' . $prevImage);
+        }
         $this->content->deletekemendikbud($id);
     }
 
@@ -455,6 +491,12 @@ class Content extends CI_Controller
 
     public function deletekemenlu($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemenlu', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemenlu/' . $prevImage);
+        }
         $this->content->deletekemenlu($id);
     }
 
@@ -512,6 +554,12 @@ class Content extends CI_Controller
 
     public function deletekemenkominfo($id)
     {
+        $prevImage  = $this->db->get_where('tb_kemenkominfo', ['id' => $id])->row_array()['image'];
+
+        // delete previous image
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/kemenkominfo/' . $prevImage);
+        }
         $this->content->deletekemenkominfo($id);
     }
 }

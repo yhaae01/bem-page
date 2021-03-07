@@ -1,7 +1,8 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class User extends CI_Controller
+{
 
     public function __construct()
     {
@@ -10,14 +11,13 @@ class User extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('User_model', 'user');
-        
     }
 
     public function index()
     {
         $data['title']  = 'My Profile';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
@@ -29,8 +29,8 @@ class User extends CI_Controller {
     {
         $data['title']  = 'Edit Profile';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        
-        $this->form_validation->set_rules('name', 'Nama', 'trim|required',[
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
             'required' => 'Nama harus diisi!'
         ]);
 
@@ -50,7 +50,7 @@ class User extends CI_Controller {
                 $config['max_size']         = '2048';
 
                 $this->load->library('upload', $config);
-                
+
                 if ($this->upload->do_upload('image')) { // ngambil dari name img
                     $oldImage = $data['user']['image']; // ngambil dari data diatas, tabel user field image
                     if ($oldImage != 'default.png') {
@@ -72,11 +72,11 @@ class User extends CI_Controller {
     {
         $data['title']  = 'Ubah Password';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
-        
+
         $this->form_validation->set_rules('currentpassword', 'Current Password', 'trim|required');
         $this->form_validation->set_rules('newpassword1', 'New Password', 'trim|required|min_length[6]|matches[newpassword2]');
         $this->form_validation->set_rules('newpassword2', 'New Password', 'trim|required|min_length[6]|matches[newpassword1]');
-        
+
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
@@ -87,7 +87,6 @@ class User extends CI_Controller {
             $this->user->changePassword();
         }
     }
-
 }
 
 /* End of file User.php */
