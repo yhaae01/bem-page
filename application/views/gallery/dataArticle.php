@@ -40,13 +40,13 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="hapusUserLabel">Hapus User</h5>
+                                        <h5 class="modal-title" id="hapusUserLabel">Hapus Artikel</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="<?= base_url('gallery/deleteArticle/') . $article['id']; ?>" method="post">
+                                        <form action="<?= base_url('gallery/hapus?id=') . $article['id']; ?>" method="post">
                                             <p>Yakin ingin hapus artikel: <br><br> <strong><?= ucwords($article['title']); ?></strong></p>
                                     </div>
                                     <div class="modal-footer">

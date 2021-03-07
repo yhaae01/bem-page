@@ -126,6 +126,20 @@ class Gallery extends CI_Controller
         }
     }
 
+    public function hapus()
+    {
+        $id = $this->input->get('id');
+        $prevImage  = $this->db->get_where('tb_article', ['id' => $id])->row_array()['cover'];
+        if ($prevImage != 'default.jpg') {
+            unlink(FCPATH . 'assets/img/cover/' . $prevImage);
+        }
+        $this->db->where('id', $id);
+        $this->db->delete('tb_article');
+
+        $this->session->set_flashdata('message', '<div class="alert alert-success">Hapus artikel berhasil</div>');
+        redirect('gallery/article');
+    }
+
     public function tampilArticle()
     {
         $data['title'] = 'Kegiatan Terbaru';
