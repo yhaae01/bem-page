@@ -76,7 +76,8 @@
                                             <input type="text" class="form-control" name="name" value="<?= $u['name']; ?>">
                                         </div>
                                         <div class="form-group">
-                                            <label for="">Foto</label>
+                                            <label for="">Foto</label><br>
+                                            <img class="mb-3" src="<?= base_url('assets/img/kemenlu/') . $u['image']; ?>" height="100">
                                             <div class="custom-file mb-2">
                                                 <input type="file" name="image" class="custom-file-input">
                                                 <label class="custom-file-label">Pilih gambar...</label>
