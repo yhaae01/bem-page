@@ -18,7 +18,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/bph');
@@ -30,7 +30,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/bph');
@@ -70,7 +70,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemenag');
@@ -102,7 +102,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemenag');
@@ -122,7 +122,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemenko');
@@ -154,7 +154,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemenko');
@@ -174,7 +174,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemenor');
@@ -206,7 +206,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemenor');
@@ -226,7 +226,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemendagri');
@@ -258,7 +258,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemendagri');
@@ -278,7 +278,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemendikbud');
@@ -310,7 +310,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemendikbud');
@@ -330,7 +330,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemenlu');
@@ -362,7 +362,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemenlu');
@@ -382,7 +382,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            Data ketua berhasil ditambahkan.
+            Data berhasil ditambahkan.
             </div>'
         );
         redirect('content/kemenkominfo');
@@ -414,7 +414,7 @@ class Content_model extends CI_Model
         $this->session->set_flashdata(
             'message',
             '<div class="alert alert-success" role="alert">
-            User berhasil dihapus.
+            Data berhasil dihapus.
             </div>'
         );
         redirect('content/kemenkominfo');
