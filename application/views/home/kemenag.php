@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <?php echo form_open_multipart('content/editKemenag'); ?>
-                                        <input type="hidden" name="id">
+                                        <input type="hidden" name="id" value="<?= $u['id']; ?>">
                                         <div class="form-group">
                                             <label for="name">Nama</label>
                                             <input type="text" class="form-control" name="name" value="<?= $u['name']; ?>">

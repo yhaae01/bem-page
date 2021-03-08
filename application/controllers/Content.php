@@ -79,6 +79,8 @@ class Content extends CI_Controller
     {
         $data['title']  = 'Badan Pengurus Harian';
         $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_bph')->result_array();
+        $id = $this->input->post('id');
 
         $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
             'required' => 'Nama harus diisi!'
@@ -88,7 +90,7 @@ class Content extends CI_Controller
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
-            $this->load->view('content/bph', $data);
+            $this->load->view('home/bph', $data);
             $this->load->view('templates/footer');
         } else {
             // jika ada gambar yang di upload
@@ -105,20 +107,22 @@ class Content extends CI_Controller
 
                 $this->load->library('upload', $config);
 
-                if ($this->upload->do_upload('image')) { // ngambil dari name img
-                    $oldImage = $data['tb_bph']['image']; // ngambil dari data diatas, tabel user field image
-                    if ($oldImage != 'default.png') {
-                        unlink(FCPATH . 'assets/img/bph/' . $oldImage);
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_bph', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/bph/' . $prevImage);
                     }
-                    $newImage = $this->upload->data('file_name');
-                    $this->db->set('image', $newImage);
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
                 } else {
                     echo $this->upload->display_errors();
                 }
             }
 
             // hanya ubah nama
-            $this->content->editBph();
+            $this->content->editBph($id);
         }
     }
 
@@ -171,6 +175,57 @@ class Content extends CI_Controller
             } else {
                 $this->content->insertKemenko();
             }
+        }
+    }
+
+    public function editkemenko()
+    {
+        $data['title']  = 'Kementerian Ekonomi';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemenko')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemenko', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemenko_' . time();
+                $config['upload_path'] = './assets/img/kemenko/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemenko', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemenko/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemenko($id);
         }
     }
 
@@ -237,6 +292,57 @@ class Content extends CI_Controller
         }
     }
 
+    public function editkemenag()
+    {
+        $data['title']  = 'Kementerian Agama';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemenag')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemenag', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemenag_' . time();
+                $config['upload_path'] = './assets/img/kemenag/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemenag', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemenag/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemenag($id);
+        }
+    }
+
     public function deletekemenag($id)
     {
         $prevImage  = $this->db->get_where('tb_kemenag', ['id' => $id])->row_array()['image'];
@@ -297,6 +403,57 @@ class Content extends CI_Controller
             } else {
                 $this->content->insertkemenor();
             }
+        }
+    }
+
+    public function editkemenor()
+    {
+        $data['title']  = 'Kementerian Olahraga';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemenor')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemenor', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemenor_' . time();
+                $config['upload_path'] = './assets/img/kemenor/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemenor', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemenor/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemenor($id);
         }
     }
 
@@ -363,6 +520,57 @@ class Content extends CI_Controller
         }
     }
 
+    public function editkemendagri()
+    {
+        $data['title']  = 'Kementerian Dalam Negeri';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemendagri')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemendagri', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemendagri_' . time();
+                $config['upload_path'] = './assets/img/kemendagri/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemendagri', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemendagri/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemendagri($id);
+        }
+    }
+
     public function deletekemendagri($id)
     {
         $prevImage  = $this->db->get_where('tb_kemendagri', ['id' => $id])->row_array()['image'];
@@ -423,6 +631,57 @@ class Content extends CI_Controller
             } else {
                 $this->content->insertkemendikbud();
             }
+        }
+    }
+
+    public function editkemendikbud()
+    {
+        $data['title']  = 'Kementerian Pendidikan & Kebudayaan';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemendikbud')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemendikbud', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemendikbud_' . time();
+                $config['upload_path'] = './assets/img/kemendikbud/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemendikbud', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemendikbud/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemendikbud($id);
         }
     }
 
@@ -489,6 +748,57 @@ class Content extends CI_Controller
         }
     }
 
+    public function editkemenlu()
+    {
+        $data['title']  = 'Kementerian Luar Negeri';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemenlu')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemenlu', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemenlu_' . time();
+                $config['upload_path'] = './assets/img/kemenlu/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemenlu', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemenlu/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemenlu($id);
+        }
+    }
+
     public function deletekemenlu($id)
     {
         $prevImage  = $this->db->get_where('tb_kemenlu', ['id' => $id])->row_array()['image'];
@@ -549,6 +859,57 @@ class Content extends CI_Controller
             } else {
                 $this->content->insertkemenkominfo();
             }
+        }
+    }
+
+    public function editkemenkominfo()
+    {
+        $data['title']  = 'Kementerian Informasi & Komunikasi';
+        $data['user']   = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['users'] = $this->db->get('tb_kemenkominfo')->result_array();
+        $id = $this->input->post('id');
+
+        $this->form_validation->set_rules('name', 'Nama', 'trim|required', [
+            'required' => 'Nama harus diisi!'
+        ]);
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('home/kemenkominfo', $data);
+            $this->load->view('templates/footer');
+        } else {
+            // jika ada gambar yang di upload
+            $uploadImage = $_FILES['image']['name'];
+
+            if ($uploadImage) {
+                $nama = 'kemenkominfo_' . time();
+                $config['upload_path'] = './assets/img/kemenkominfo/';
+                $config['allowed_types'] = 'gif|jpg|png';
+                $config['max_size']  = '2000';
+                $config['max_width']  = '2000';
+                $config['max_height']  = '2000';
+                $config['file_name'] = $nama;
+
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $prevImage  = $this->db->get_where('tb_kemenkominfo', ['id' => $id])->row_array()['image'];
+                    // delete previous image
+                    if ($prevImage != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/kemenkominfo/' . $prevImage);
+                    }
+                    $new_image = $this->upload->data('file_name');
+
+                    $this->db->set('image', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
+            // hanya ubah nama
+            $this->content->editkemenkominfo($id);
         }
     }
 
