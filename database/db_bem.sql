@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 06, 2021 at 03:02 PM
--- Server version: 10.5.9-MariaDB-log
--- PHP Version: 7.4.15
+-- Generation Time: Mar 09, 2021 at 12:07 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `tb_article` (
   `content` text NOT NULL,
   `url` varchar(255) NOT NULL,
   `cover` varchar(255) DEFAULT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `author` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -62,10 +62,8 @@ CREATE TABLE `tb_bph` (
 --
 
 INSERT INTO `tb_bph` (`id`, `name`, `image`, `position`) VALUES
-(1, 'surya', 'bph_1614859033.jpg', 'ketua'),
-(2, 'aldi', 'bph_1614859053.jpg', 'wakil'),
-(3, 'ahmad', 'bph_1614859071.jpg', 'anggota'),
-(4, 'eka', 'bph_1614859080.jpg', 'anggota');
+(3, 'surya intan permana', 'bph_1615163441.png', 'ketua'),
+(4, 'aldi tegar prakoso', 'bph_1615165103.png', 'Wakil');
 
 -- --------------------------------------------------------
 
@@ -85,7 +83,7 @@ CREATE TABLE `tb_kemenag` (
 --
 
 INSERT INTO `tb_kemenag` (`id`, `name`, `image`, `position`) VALUES
-(1, 'eka wardana', 'kemenag_1615022120.png', 'ketua');
+(1, 'eka wardanas', 'kemenag_1615022120.png', 'anggota');
 
 -- --------------------------------------------------------
 
@@ -205,7 +203,7 @@ CREATE TABLE `tb_kemenor` (
 --
 
 INSERT INTO `tb_kemenor` (`id`, `name`, `image`, `position`) VALUES
-(1, 'eka wardana', 'kemenor_1615022330.png', 'ketua');
+(1, 'eka wardanas', 'kemenor_1615022330.png', 'anggota');
 
 -- --------------------------------------------------------
 

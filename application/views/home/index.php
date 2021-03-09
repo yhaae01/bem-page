@@ -327,11 +327,7 @@
                                     <?php endforeach; ?>
                                 </div>
                                 <div class="col-lg-6">
-                                    <?php foreach ($bph as $bp) : ?>
-                                        <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" height="150" alt="">
-                                        <h3><?= ucwords($bp->position); ?></h3>
-                                        <h4><?= ucwords($bp->name); ?></h4>
-                                    <?php endforeach; ?>
+
                                 </div>
                             </div>
                         </div>
