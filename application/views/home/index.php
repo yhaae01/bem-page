@@ -16,7 +16,7 @@
             <header class="bem-header " id="headHomeRespawnd">
                 <div class="container-brand-bem">
                     <div class="container-brand-logo-bem">
-                        <img src="./assets/img/logo bem.png" alt="Logo" class="brand-logo">
+                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo" class="brand-logo">
                     </div>
                     <div class="pipe">|</div>
                     <div class="container-brand-title-bem">
@@ -45,8 +45,8 @@
             </header>
 
             <div class="container-header">
-                <img src="./assets/img/icon-cover.png" alt="Image Cover" class="image-cover-card">
-                <img src="./assets/img/Ellipse 1.png" alt="Image Cover" class="image-cover-ellipse">
+                <img src="<?= base_url(); ?>assets/img/icon-cover.png" alt="Image Cover" class="image-cover-card">
+                <img src="<?= base_url(); ?>assets/img/Ellipse 1.png" alt="Image Cover" class="image-cover-ellipse">
             </div>
         </div>
         <div class="section-content-header">
@@ -61,8 +61,8 @@
         </div>
         <div class="section-content-body">
             <div class="container-ellipse2">
-                <img src="./assets/img/Ellipse-2.png" alt="Ellipse 2" class="ellipse-2-card">
-                <img src="./assets/img/logo bem.png" alt="Logo Ellipse Body" class="logo-ellipse-body">
+                <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" alt="Ellipse 2" class="ellipse-2-card">
+                <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo Ellipse Body" class="logo-ellipse-body">
                 <div class="desc-title-body">
                     <h3 class="title-content-body">
                         About Us
@@ -100,12 +100,12 @@
                                 </p>
                             </div>
                             <div class="container-icon-definisi">
-                                <img src="./assets/img/icon-definisi.png" alt="Icon Definisi" class="icon-definisi-card">
+                                <img src="<?= base_url(); ?>assets/img/icon-definisi.png" alt="Icon Definisi" class="icon-definisi-card">
                             </div>
                         </div>
                         <div class="container-landasan-hukum">
                             <div class="container-icon-landasan-hukum">
-                                <img src="./assets/img/icon-landasan-hukum.png" alt="Icon Landasan Hukum" class="icon-landasan-hukum">
+                                <img src="<?= base_url(); ?>assets/img/icon-landasan-hukum.png" alt="Icon Landasan Hukum" class="icon-landasan-hukum">
                             </div>
                             <div class="container-content-landasan-hukum">
                                 <h2 class="title-content-landasan-hukum">
@@ -151,12 +151,12 @@
                                 </p>
                             </div>
                             <div class="container-icon-visi-bem">
-                                <img src="./assets/img/icon-visi-bem.png" alt="Icon Visi Misi Bem" class="icon-visi-bem-card">
+                                <img src="<?= base_url(); ?>assets/img/icon-visi-bem.png" alt="Icon Visi Misi Bem" class="icon-visi-bem-card">
                             </div>
                         </div>
                         <div class="container-misi-bem">
                             <div class="container-icon-misi-bem">
-                                <img src="./assets/img/icon-misi-bem.png" alt="Icon Misi Bem" class="icon-misi-bem-card">
+                                <img src="<?= base_url(); ?>assets/img/icon-misi-bem.png" alt="Icon Misi Bem" class="icon-misi-bem-card">
                             </div>
                             <div class="container-content-misi-bem">
                                 <h2 class="title-misi-bem">
@@ -188,8 +188,8 @@
         </div>
         <div class="section-content-structure">
             <div class="container-card-structure">
-                <img src="./assets/img/Ellipse-2.png" alt="Logo Ellipse Structure" class="logo-ellipse-structure">
-                <img src="./assets/img/logo-delarosa.png" alt="Logo Delarosa Structure" class="logo-delarosa-structure">
+                <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" alt="Logo Ellipse Structure" class="logo-ellipse-structure">
+                <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Delarosa Structure" class="logo-delarosa-structure">
                 <div class="desc-structure">
                     <div class="container-wrapper-title-structure">
                         <h3 class="title-content-structure">
@@ -203,41 +203,42 @@
                     <div class="wrapper-structure-grid">
                         <div class="centered">
                             <button id="myBtn" class="card">
-                                <img src="./assets/img/BPH.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/BPH.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Badan Pengurus Harian</h2>
                             </button><!-- /card-one -->
 
                             <button class="card">
-                                <img src="./assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Ekonomi</h2>
                             </button><!-- /card-two -->
 
                             <button class="card">
-                                <img src="./assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Agama</h2>
                             </button><!-- /card-three -->
 
                             <button class="card">
-                                <img src="./assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Olahraga</h2>
                             </button><!-- /card-four -->
+
                             <button class="card">
-                                <img src="./assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Dalam Negeri</h2>
                             </button><!-- /card-one -->
 
                             <button class="card">
-                                <img src="./assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Pendidikan & Budaya</h2>
                             </button><!-- /card-two -->
 
                             <button class="card">
-                                <img src="./assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2>Kementrian Luar Negri</h2>
                             </button><!-- /card-three -->
 
                             <button class="card">
-                                <img src="./assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url(); ?>assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h2>
                             </button><!-- /card-four -->
                         </div>
@@ -254,10 +255,10 @@
                 <h2>Member Of :</h2>
                 <ul class="card-image-patner">
                     <li>
-                        <img src="./assets/img/BEM-SI-01 1.png" alt="Bem SI">
+                        <img src="<?= base_url(); ?>assets/img/BEM-SI-01 1.png" alt="Bem SI">
                     </li>
                     <li>
-                        <img src="./assets/img/Bsb@300x-8.png" alt="Bem SI">
+                        <img src="<?= base_url(); ?>assets/img/Bsb@300x-8.png" alt="Bem SI">
                     </li>
                 </ul>
             </div>
@@ -266,12 +267,12 @@
             <div class="card-content-footer">
                 <div class="card-desc">
                     <div class="card-image-big">
-                        <img src="./assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
-                        <img src="./assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
+                        <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
+                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
                     </div>
                     <div class="card-image-small">
-                        <img src="./assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
-                        <img src="./assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
+                        <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
+                        <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
                     </div>
                     <div class="card-desc-footer-bem">
                         <h2>Badan Eksekutif Mahasiswa</h2>
@@ -284,14 +285,14 @@
                     <div class="card-sosmed-footer">
                         <h2>Social Media :</h2>
                         <a href="#" class="link-sosmed-instagram">
-                            <img src="./assets/img/icon-ig.png" alt="Icon Instagram Footer">
+                            <img src="<?= base_url(); ?>assets/img/icon-ig.png" alt="Icon Instagram Footer">
                         </a>
                         <a href="#" class="link-sosmed-email">
-                            <img src="./assets/img/icon-email.png" alt="Icon Email Footer">
+                            <img src="<?= base_url(); ?>assets/img/icon-email.png" alt="Icon Email Footer">
                         </a>
                     </div>
                     <div class="card-address-footer">
-                        <img src="./assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
+                        <img src="<?= base_url(); ?>assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
                         <p class="desc-address">Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah,
                             Kota Bogor, Jawa Barat 16124</p>
                     </div>
@@ -302,97 +303,41 @@
             </div>
         </div>
 
-        <!-- Modal Structure -->
+        <!-- Modal BPH -->
         <div id="myModal" class="modal">
-
             <!-- Modal content -->
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <img src="./assets/img/BPH.png" alt="" srcset="" class="modal-header-image">
+                    <img src="<?= base_url(); ?>assets/img/BPH.png" alt="" srcset="" class="modal-header-image">
                     <h2 class="title-modal-header">Badan Pengurus Harian</h2>
                 </div>
                 <div class="modal-body">
                     <div class="wrapper-modal-body">
                         <div class="centered-modal-body">
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Ketua
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
+                            <?php foreach ($bph as $bp) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($bp->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($bp->name); ?>
+                                        </h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Wakil
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Sekretaris 1
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Sekretaris 2
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Bendahara 1
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="img-card-modal">
-                                <img src="./assets/img/image-article.png" alt="image-modal" class="card-image-modal">
-                                <div class="content-modal-body">
-                                    <h2 class="title-modal-body">
-                                        Bendahara 1
-                                    </h2>
-                                    <h3 class="subtitle-modal-body">
-                                        Tifal
-                                    </h3>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-        <!-- End Modal Structure -->
+        <!-- End Modal BPH -->
 
     </div>
 </body>
-<script src="./assets/js/main.js"></script>
+<script src="<?= base_url(); ?>assets/js/main.js"></script>
 <script>
     function scrollFunctionHome() {
         var s = document.getElementById("headHomeRespawnd");
