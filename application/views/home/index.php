@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
     <link rel="stylesheet" href="<?= base_url('assets/css/index.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
-
+    <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
 </head>
 
 <body>
@@ -203,46 +202,51 @@
 
                     <!-- BS4 Modal -->
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-2">
-                                <button class="card" data-toggle="modal" data-target="#modalbph">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalbph">
                                     <img src="<?= base_url(); ?>assets/img/BPH.png" alt="" class="card-image-structure-group">
                                     <h5 class="title-card-structure">Badan Pengurus Harian</h5>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemenko">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemenko">
                                     <img src="<?= base_url(); ?>assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
                                     <h4 class="title-card-structure">Kementrian Ekonomi</h4>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemenag">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemenag">
                                     <img src="<?= base_url(); ?>assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
                                     <h4 class="title-card-structure">Kementrian Agama</h4>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemenor">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemenor">
                                     <img src="<?= base_url(); ?>assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
                                     <h4 class="title-card-structure">Kementrian Olahraga</h4>
                                 </button>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemendagri">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemendagri">
                                     <img src="<?= base_url(); ?>assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
                                     <h5 class="title-card-structure">Kementrian Dalam Negeri</h5>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemendikbud">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemendikbud">
                                     <img src="<?= base_url(); ?>assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
                                     <h5 class="title-card-structure">Kementrian Pendidikan & Budaya</h5>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemenlu">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemenlu">
                                     <img src="<?= base_url(); ?>assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
                                     <h5>Kementrian Luar Negri</h5>
                                 </button>
                             </div>
-                            <div class="col-md-3 col-sm-2"><button class="card" data-toggle="modal" data-target="#modalkemenkominfo">
+                            <div class="col-md-3 card">
+                                <button data-toggle="modal" class="btn" data-target="#modalkemenkominfo">
                                     <img src="<?= base_url(); ?>assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
                                     <h5 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h5>
                                 </button>
@@ -319,15 +323,14 @@
                     <div class="modal-body">
                         <div class="container">
                             <div class="row text-center">
-                                <div class="col-lg-6">
-                                    <?php foreach ($bph as $bp) : ?>
+                                <?php foreach ($bph as $bp) : ?>
+                                    <div class="col-lg-6">
                                         <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" height="150" alt="">
                                         <h3><?= ucwords($bp->position); ?></h3>
                                         <h4 class="mb-3"><?= ucwords($bp->name); ?></h4>
-                                    <?php endforeach; ?>
-                                </div>
+                                    </div>
+                                <?php endforeach; ?>
                                 <div class="col-lg-6">
-
                                 </div>
                             </div>
                         </div>
