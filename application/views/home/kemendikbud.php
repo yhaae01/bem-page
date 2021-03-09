@@ -89,6 +89,7 @@
                                                 <option value="<?= ucwords($u['position']); ?>"><?= ucwords($u['position']); ?></option>
                                                 <option value="ketua">Ketua</option>
                                                 <option value="wakil">Wakil</option>
+                                                <option value="bendahara">Bendahara</option>
                                                 <option value="anggota">Anggota</option>
                                             </select>
                                         </div>
@@ -142,6 +143,7 @@
                         <option value="">-- Pilih Posisi --</option>
                         <option value="ketua">Ketua</option>
                         <option value="wakil">Wakil</option>
+                        <option value="bendahara">Bendahara</option>
                         <option value="anggota">Anggota</option>
                     </select>
                 </div>
