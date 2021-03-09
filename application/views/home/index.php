@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
     <link rel="stylesheet" href="<?= base_url('assets/css/index.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
+
 </head>
 
 <body>
@@ -200,59 +200,50 @@
                         </h2>
                     </div>
 
-                    <!-- BS4 Modal -->
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalbph">
-                                    <img src="<?= base_url(); ?>assets/img/BPH.png" alt="" class="card-image-structure-group">
-                                    <h5 class="title-card-structure">Badan Pengurus Harian</h5>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemenko">
-                                    <img src="<?= base_url(); ?>assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h4 class="title-card-structure">Kementrian Ekonomi</h4>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemenag">
-                                    <img src="<?= base_url(); ?>assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h4 class="title-card-structure">Kementrian Agama</h4>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemenor">
-                                    <img src="<?= base_url(); ?>assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h4 class="title-card-structure">Kementrian Olahraga</h4>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemendagri">
-                                    <img src="<?= base_url(); ?>assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h5 class="title-card-structure">Kementrian Dalam Negeri</h5>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemendikbud">
-                                    <img src="<?= base_url(); ?>assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h5 class="title-card-structure">Kementrian Pendidikan & Budaya</h5>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemenlu">
-                                    <img src="<?= base_url(); ?>assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h5>Kementrian Luar Negri</h5>
-                                </button>
-                            </div>
-                            <div class="col-md-3 card">
-                                <button data-toggle="modal" class="btn" data-target="#modalkemenkominfo">
-                                    <img src="<?= base_url(); ?>assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
-                                    <h5 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h5>
-                                </button>
-                            </div>
+                    <!-- Button Modal Awal -->
+                    <div class="wrapper-structure-grid">
+                        <div class="centered">
+                            <button id="btnBph" class="card" data-toggle="modal" data-target="#modalBph">
+                                <img src="./assets/img/BPH.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Badan Pengurus Harian</h2>
+                            </button><!-- /card-one -->
+
+                            <button id="btnKemenko" class="card" data-toggle="modal" data-target="#modalKemenko">
+                                <img src="./assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Ekonomi</h2>
+                            </button><!-- /card-two -->
+
+                            <button id="btnKemenag" class="card" data-toggle="modal" data-target="#modalKemenag">
+                                <img src="./assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Agama</h2>
+                            </button><!-- /card-three -->
+
+                            <button id="btnKemenor" class="card" data-toggle="modal" data-target="#modalKemenor">
+                                <img src="./assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Olahraga</h2>
+                            </button><!-- /card-four -->
+                            <button id="btnKemendagri" class="card" data-toggle="modal" data-target="#modalKemendag">
+                                <img src="./assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Dalam Negeri</h2>
+                            </button><!-- /card-one -->
+
+                            <button id="btnKemendikbud" class="card" data-toggle="modal" data-target="#modalKemendibud">
+                                <img src="./assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Pendidikan & Budaya</h2>
+                            </button><!-- /card-two -->
+
+                            <button id="btnKemenlu" class="card" data-toggle="modal" data-target="#modalKemenlu">
+                                <img src="./assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2>Kementrian Luar Negri</h2>
+                            </button><!-- /card-three -->
+
+                            <button id="btnKominfo" class="card" data-toggle="modal" data-target="#modalKominfo">
+                                <img src="./assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
+                                <h2 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h2>
+                            </button><!-- /card-four -->
                         </div>
                     </div>
+                    <!-- Button Modal Awal -->
 
                 </div>
             </div>
@@ -310,194 +301,290 @@
             </div>
         </div>
 
-        <!-- Modal BPH -->
-        <div class="modal fade" id="modalbph" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal Bph</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="row text-center">
-                                <?php foreach ($bph as $bp) : ?>
-                                    <div class="col-lg-6">
-                                        <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" height="150" alt="">
-                                        <h3><?= ucwords($bp->position); ?></h3>
-                                        <h4 class="mb-3"><?= ucwords($bp->name); ?></h4>
+        <!-- Modal Awal Bph -->
+        <div id="modalBph" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/BPH.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Badan Pengurus Harian</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($bph as $bp) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($bp->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($bp->name); ?>
+                                        </h3>
                                     </div>
-                                <?php endforeach; ?>
-                                <div class="col-lg-6">
                                 </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Tutup</button>
-                    </div>
                 </div>
             </div>
-        </div>
-        <!-- End Modal BPH -->
 
-        <!-- Modal Kemenko-->
-        <div class="modal fade" id="modalkemenko" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal Kemenko</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- End Modal Kemenko -->
+        <!-- End Modal Awal Bph -->
 
-        <!-- Modal kemenor -->
-        <div class="modal fade" id="modalkemenor" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal Kemenor</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal kemenor -->
+        <!-- Modal Awal Kemenko -->
+        <div id="modalKemenko" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
 
-        <!-- Modal kemenlu -->
-        <div class="modal fade" id="modalkemenlu" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal kemenlu</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Men%20ekonomi@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Ekonomi</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemenko as $ko) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemenko/') . $ko->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($ko->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($ko->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Modal kemenlu -->
 
-        <!-- Modal kemendikbud -->
-        <div class="modal fade" id="modalkemendikbud" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal kemendikbud</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- End Modal kemendikbud -->
+        <!-- End Modal Awal Kemenko -->
 
-        <!-- Modal kemendagri -->
-        <div class="modal fade" id="modalkemendagri" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal kemendagri</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal kemendagri -->
+        <!-- Modal Awal Kemenag -->
+        <div id="modalKemenag" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
 
-        <!-- Modal kemenag -->
-        <div class="modal fade" id="modalkemenag" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal kemenag</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Men%20Agama@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Agama</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemenag as $nag) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemenag/') . $nag->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($nag->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($nag->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- End Modal kemenag -->
 
-        <!-- Modal kemenkominfo -->
-        <div class="modal fade" id="modalkemenkominfo" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Modal kemenkominfo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        <!-- End Modal Awal Kemenag -->
+
+        <!-- Modal Awal Kemenor -->
+        <div id="modalKemenor" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Men%20Olahraga@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Olahraga</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemenor as $nor) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemenor/') . $nor->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($nor->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($nor->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <!-- End Modal kemenkominfo -->
+        <!-- End Modal Awal Kemenor -->
+
+        <!-- Modal Awal Kemendagri -->
+        <div id="modalKemendagri" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Mendagri@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Dalam Negri</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemendagri as $dagri) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemendagri/') . $dagri->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($dagri->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($dagri->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Modal Awal Kemendagri -->
+
+        <!-- Modal Awal Kemendikbud -->
+        <div id="modalKemendikbud" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Mendikbud@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Pendidikan & Sosial Budaya</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemendikbud as $dagri) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemendikbud/') . $dagri->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($dagri->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($dagri->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Modal Awal Kemendikbud -->
+
+        <!-- Modal Awal Kemenlu -->
+        <div id="modalKemenlu" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Menlu@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Luar Negri</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kemenlu as $lu) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemenlu/') . $lu->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($lu->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($lu->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Modal Awal Kemenlu -->
+
+        <!-- Modal Awal Kominfo -->
+        <div id="modalKominfo" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="./assets/img/Kominfo@300x-8.png" alt="" srcset="" class="modal-header-image">
+                    <h2 class="title-modal-header">Kementrian Komunikasi & Informatika</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper-modal-body">
+                        <div class="centered-modal-body">
+                            <?php foreach ($kominfo as $fo) : ?>
+                                <div class="img-card-modal">
+                                    <img src="<?= base_url('assets/img/kemenkominfo/') . $fo->image; ?>" alt="image-modal" class="card-image-modal">
+                                    <div class="content-modal-body">
+                                        <h2 class="title-modal-body">
+                                            <?= ucwords($fo->position); ?>
+                                        </h2>
+                                        <h3 class="subtitle-modal-body">
+                                            <?= ucwords($fo->name); ?>
+                                        </h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Modal Awal Kominfo -->
 
     </div>
 </body>
 
 <script src="<?= base_url(); ?>assets/js/jquery-3.4.1.min.js"></script>
-<script src="<?= base_url(); ?>assets/js/popper.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?= base_url(); ?>assets/js/main.js"></script>
 <script>
+    // Scroll Navbar Home Page Responsive
+    window.onscroll = function() {
+        scrollFunctionHome()
+    };
+
     function scrollFunctionHome() {
         var s = document.getElementById("headHomeRespawnd");
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {

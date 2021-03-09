@@ -152,7 +152,7 @@ a.icon {
 }
 
 .overlay-bg {
-  background: url(/assets/img/Ellipse-2.png);
+  background: url('/bem-page/assets/img/Ellipse-2.png');
   height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
