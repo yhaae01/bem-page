@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-html, body {
-  font-family: 'Montserrat';
+html,
+body {
+  font-family: "Montserrat";
   background: #ffffff;
   font-size: 18px;
   height: 100vh;
@@ -8,12 +9,14 @@ html, body {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .content-wrapper {
@@ -21,20 +24,20 @@ html, body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .section-header {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   margin: auto;
 }
@@ -46,14 +49,14 @@ header.bem-header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 header.bem-header.home {
@@ -62,8 +65,8 @@ header.bem-header.home {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header.bem-header.responsive {
@@ -72,8 +75,8 @@ header.bem-header.responsive {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header.bem-header.sticky-header {
@@ -83,14 +86,14 @@ header.bem-header.sticky-header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   background-color: #2d3995;
   width: 100%;
 }
@@ -101,8 +104,8 @@ header.bem-header.sticky-header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header .bem-header .responsive .home {
@@ -111,8 +114,8 @@ header .bem-header .responsive .home {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .container-brand-bem {
@@ -121,10 +124,10 @@ header .bem-header .responsive .home {
   display: flex;
   padding: 5px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .container-brand-logo-bem {
@@ -161,10 +164,10 @@ nav.card-nav-link {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   margin-left: 300px;
 }
 
@@ -200,11 +203,11 @@ a.link-pages {
 
 .link-header.active {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   -webkit-text-decoration-color: #eee;
-          text-decoration-color: #eee;
+  text-decoration-color: #eee;
   text-decoration-thickness: 3px;
   text-underline-position: under;
 }
@@ -235,7 +238,7 @@ a.link-pages {
 
 .section-content-header {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 100px;
   width: 100%;
   position: relative;
@@ -253,7 +256,7 @@ h2.landing-title {
   font-weight: 900;
   font-size: 40px;
   line-height: 55px;
-  color: #0F1837;
+  color: #0f1837;
 }
 
 h4.content-landing {
@@ -266,7 +269,7 @@ h4.content-landing {
   font-weight: normal;
   font-size: 13.5px;
   line-height: 32px;
-  color: #0F1837;
+  color: #0f1837;
   z-index: 1;
 }
 
@@ -313,10 +316,10 @@ h2.subtitle-content-body {
 }
 
 .container-sejarah {
-  color: #0F1837;
+  color: #0f1837;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 200px;
   height: 455px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -337,8 +340,8 @@ h2.subtitle-content-body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   width: 100%;
 }
 
@@ -354,7 +357,7 @@ h2.subtitle-content-body {
   width: 400px;
   color: #222222;
   text-align: right;
-  font-size: .68em;
+  font-size: 0.68em;
 }
 
 .container-icon-definisi {
@@ -373,8 +376,8 @@ h2.subtitle-content-body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   width: 100%;
 }
 
@@ -402,7 +405,7 @@ h2.subtitle-content-body {
   width: 400px;
   color: #222222;
   text-align: left;
-  font-size: .68em;
+  font-size: 0.68em;
 }
 
 .container-content-landasan-hukum ul {
@@ -412,7 +415,7 @@ h2.subtitle-content-body {
 ul.ul-landasan-hukum > li {
   list-style: none;
   margin-bottom: 10px;
-  font-size: .68em;
+  font-size: 0.68em;
   text-align: left;
 }
 
@@ -422,8 +425,8 @@ ul.ul-landasan-hukum > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   width: 100%;
 }
 
@@ -440,7 +443,7 @@ ul.ul-landasan-hukum > li {
   width: 400px;
   color: #222222;
   text-align: right;
-  font-size: .68em;
+  font-size: 0.68em;
 }
 
 .container-misi-bem {
@@ -449,8 +452,8 @@ ul.ul-landasan-hukum > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   width: 100%;
 }
 
@@ -479,7 +482,7 @@ h2.title-misi-bem {
 ul.ul-misi-bem > li {
   list-style: none;
   margin-bottom: 10px;
-  font-size: .68em;
+  font-size: 0.68em;
   text-align: left;
 }
 
@@ -495,7 +498,7 @@ ul.ul-misi-bem > li {
   height: 1040px;
   top: 2900px;
   bottom: 50px;
-  background: #2D3995;
+  background: #2d3995;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   width: 100%;
@@ -537,18 +540,18 @@ h2.subtitle-content-structure {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   background-color: #222222;
   height: 200px;
   margin-top: 90px;
   padding: 100px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .card-image-structure {
-  background-color: #2D3995;
+  background-color: #2d3995;
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -563,9 +566,9 @@ h2.subtitle-content-structure {
   width: 80%;
   padding: 35px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,15 +582,15 @@ h2.subtitle-content-structure {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 250px;
   border-radius: 20px;
   background: white;
@@ -595,24 +598,24 @@ h2.subtitle-content-structure {
   color: #222222;
   margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(21.999% - 1em);
-          flex: 0 1 calc(21.999% - 1em);
+  -ms-flex: 0 1 calc(21.999% - 1em);
+  flex: 0 1 calc(21.999% - 1em);
 }
 
 button.card {
   border: none;
   opacity: 1;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 button.card:hover {
   cursor: pointer;
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   opacity: 1;
   -webkit-box-shadow: 0.5px 1px 5px white;
-          box-shadow: 0.5px 1px 5px white;
+  box-shadow: 0.5px 1px 5px white;
 }
 
 h2.title-card-structure {
@@ -620,11 +623,11 @@ h2.title-card-structure {
   font-size: 1.3em;
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .card-image-structure-group {
@@ -646,10 +649,10 @@ h2.title-card-structure {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   margin-left: 100px;
 }
@@ -659,7 +662,7 @@ ul.card-image-patner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 ul.card-image-patner > li {
@@ -673,7 +676,7 @@ ul.card-image-patner > li {
   padding-top: 25px;
   padding-bottom: 20px;
   width: 100%;
-  background-color: #2D3995;
+  background-color: #2d3995;
 }
 
 .card-content-footer {
@@ -681,14 +684,14 @@ ul.card-image-patner > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-desc {
@@ -702,14 +705,14 @@ ul.card-image-patner > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-image-big {
@@ -717,13 +720,13 @@ ul.card-image-patner > li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-image-footer-bsi {
@@ -741,16 +744,16 @@ ul.card-image-patner > li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   margin-right: 30px;
 }
 
@@ -772,7 +775,7 @@ ul.card-image-patner > li {
   font-size: 18px;
   line-height: 26px;
   /* or 144% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-desc-footer-bem > p:not(:last-child) {
@@ -781,7 +784,7 @@ ul.card-image-patner > li {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-desc-footer-bem > p {
@@ -797,18 +800,18 @@ ul.card-image-patner > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .card-sosmed-footer h2 {
@@ -819,15 +822,15 @@ ul.card-image-patner > li {
 
 .link-sosmed-instagram {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: -50px;
 }
 
 .link-sosmed-email {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .card-address-footer {
@@ -835,20 +838,20 @@ ul.card-image-patner > li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-icon-address {
@@ -868,7 +871,7 @@ ul.card-image-patner > li {
   line-height: 26px;
   margin-left: 100px;
   /* identical to box height, or 186% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* The Modal (background) */
@@ -903,14 +906,15 @@ ul.card-image-patner > li {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Add Animation */
@@ -980,9 +984,9 @@ h2.title-modal-header {
 .centered-modal-body {
   width: 85%;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,23 +1010,23 @@ img.card-image-modal {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-radius: 20px;
   background: white;
   margin-bottom: 2em;
   color: #222222;
   margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(21.999% - 1em);
-          flex: 0 1 calc(21.999% - 1em);
+  -ms-flex: 0 1 calc(21.999% - 1em);
+  flex: 0 1 calc(21.999% - 1em);
 }
 
 @media screen and (min-width: 310px) and (max-width: 360px) {
@@ -1031,7 +1035,7 @@ img.card-image-modal {
     margin-left: 5px;
   }
   .title-brand {
-    font-size: .7em;
+    font-size: 0.7em;
   }
   nav.card-nav-link a {
     display: none;
@@ -1041,10 +1045,10 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 0px;
   }
   nav.card-nav-link a.icon {
@@ -1054,7 +1058,7 @@ img.card-image-modal {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -1107,11 +1111,11 @@ img.card-image-modal {
     font-weight: normal;
     font-size: 12.5px;
     line-height: 25px;
-    color: #0F1837;
+    color: #0f1837;
     z-index: 1;
     word-break: break-all;
   }
-  
+
   .ellipse-2-card {
     position: absolute;
     width: 100%;
@@ -1132,7 +1136,7 @@ img.card-image-modal {
     font-size: 1em;
   }
   h2.subtitle-content-body {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .container-sejarah {
     margin-top: 120px;
@@ -1143,11 +1147,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
     margin-top: 250%;
   }
@@ -1156,13 +1160,13 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .icon-definisi-card {
     width: 250px;
@@ -1190,8 +1194,8 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .container-icon-landasan-hukum {
     width: 100%;
@@ -1213,8 +1217,8 @@ img.card-image-modal {
   .container-visi-bem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .container-content-visi-bem {
     margin-left: unset;
@@ -1235,8 +1239,8 @@ img.card-image-modal {
   .container-misi-bem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .icon-misi-bem-card {
     width: 250px;
@@ -1261,8 +1265,8 @@ img.card-image-modal {
   }
   .card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(90.999% - 0.01em);
-            flex: 0 1 calc(90.999% - 0.01em);
+    -ms-flex: 0 1 calc(90.999% - 0.01em);
+    flex: 0 1 calc(90.999% - 0.01em);
   }
   .container-card-structure {
     height: 465vh;
@@ -1271,8 +1275,8 @@ img.card-image-modal {
     margin-bottom: 130px;
   }
   ul.card-image-patner {
-        align-items: baseline;
-        align-self: center;
+    align-items: baseline;
+    align-self: center;
   }
   ul.card-image-patner > li > img {
     width: 100px;
@@ -1281,8 +1285,8 @@ img.card-image-modal {
     margin-left: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .logo-ellipse-structure {
     position: absolute;
@@ -1300,7 +1304,7 @@ img.card-image-modal {
     font-size: 1em;
   }
   h2.subtitle-content-structure {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .logo-delarosa-structure {
     left: 35%;
@@ -1317,25 +1321,25 @@ img.card-image-modal {
     padding-top: 25px;
     padding-bottom: 20px;
     width: 100%;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc {
     display: -webkit-box;
@@ -1344,21 +1348,21 @@ img.card-image-modal {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-image-big {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-bottom: 40px;
   }
   .card-image-footer-bsi {
@@ -1376,16 +1380,16 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-bottom: 40px;
     /* margin-right: 30px; */
   }
@@ -1409,26 +1413,26 @@ img.card-image-modal {
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-sosmed-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     text-align: center;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
   .card-sosmed-footer h2 {
     font-size: 1em;
@@ -1444,20 +1448,20 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   .card-icon-address {
@@ -1476,7 +1480,7 @@ img.card-image-modal {
     font-size: 14px;
     line-height: 26px;
     margin-left: unset;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -1530,10 +1534,10 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: unset;
   }
   nav.card-nav-link a.icon {
@@ -1543,7 +1547,7 @@ img.card-image-modal {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -1582,11 +1586,11 @@ img.card-image-modal {
     padding: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .container-content-body {
     margin-top: 120px;
@@ -1594,7 +1598,7 @@ img.card-image-modal {
     width: 100%;
   }
   h2.subtitle-content-body {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .container-sejarah {
     margin-top: 115px;
@@ -1609,17 +1613,17 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .container-content-definisi p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .container-icon-definisi {
@@ -1637,11 +1641,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
   }
   .container-icon-landasan-hukum {
@@ -1664,12 +1668,12 @@ img.card-image-modal {
   }
   .container-content-landasan-hukum p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
   }
   ul.ul-landasan-hukum > li {
     list-style: none;
     margin-bottom: 10px;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
     text-align: left;
   }
@@ -1680,11 +1684,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
   }
   .container-content-visi-bem {
@@ -1704,7 +1708,7 @@ img.card-image-modal {
   }
   .container-content-visi-bem p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .container-misi-bem {
@@ -1713,12 +1717,12 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .container-icon-misi-bem {
@@ -1734,7 +1738,7 @@ img.card-image-modal {
     margin-left: unset;
   }
   ul.ul-misi-bem > li {
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .logo-ellipse-structure {
@@ -1754,7 +1758,7 @@ img.card-image-modal {
     height: 100%;
     /* top: 2900px; */
     /* bottom: 50px; */
-    background: #2D3995;
+    background: #2d3995;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 100%;
@@ -1778,15 +1782,15 @@ img.card-image-modal {
     margin-bottom: 90px;
   }
   h2.subtitle-content-structure {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .centered {
     margin-top: 15%;
   }
   .card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(90.999% - 1em);
-            flex: 0 1 calc(90.999% - 1em);
+    -ms-flex: 0 1 calc(90.999% - 1em);
+    flex: 0 1 calc(90.999% - 1em);
   }
   .section-content-patner {
     width: 100%;
@@ -1799,16 +1803,16 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     text-align: center;
     margin-left: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   ul.card-image-patner {
     margin-right: 35px;
@@ -1819,25 +1823,25 @@ img.card-image-modal {
     padding-top: 25px;
     padding-bottom: 20px;
     width: 100%;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc {
     display: -webkit-box;
@@ -1846,8 +1850,8 @@ img.card-image-modal {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-image-big {
     display: -webkit-box;
@@ -1878,16 +1882,16 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-bottom: 40px;
     /* margin-right: 30px; */
   }
@@ -1911,7 +1915,7 @@ img.card-image-modal {
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-sosmed-footer {
     display: -webkit-box;
@@ -1946,20 +1950,20 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   .card-icon-address {
@@ -1978,33 +1982,32 @@ img.card-image-modal {
     font-size: 14px;
     line-height: 26px;
     margin-left: unset;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  
-/*  End Style Responsive Mobile M*/
-  
-/*  Modal Responsive Mobile M  */
-  
+
+  /*  End Style Responsive Mobile M*/
+
+  /*  Modal Responsive Mobile M  */
+
   .modal-header-image {
     width: 25vw;
     height: 16vh;
     margin-left: 20px;
-}
-  
+  }
+
   h2.title-modal-header {
     font-size: 20px;
     color: #000;
-}
-  
-  .img-card-modal{
+  }
+
+  .img-card-modal {
     flex: 0 1 calc(99.999% - 1em);
   }
-  
+
   img.card-image-modal {
     width: 45vw;
     height: 25vh;
-}
-  
+  }
 }
 
 @media screen and (min-width: 420px) and (max-width: 767.98px) {
@@ -2056,10 +2059,10 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: unset;
   }
   nav.card-nav-link a.icon {
@@ -2069,7 +2072,7 @@ img.card-image-modal {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -2107,11 +2110,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .container-content-body {
     margin-top: 120px;
@@ -2119,7 +2122,7 @@ img.card-image-modal {
     width: 100%;
   }
   h2.subtitle-content-body {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .container-sejarah {
     margin-top: 115px;
@@ -2134,17 +2137,17 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .container-content-definisi p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .container-icon-definisi {
@@ -2162,11 +2165,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
   }
   .container-icon-landasan-hukum {
@@ -2189,12 +2192,12 @@ img.card-image-modal {
   }
   .container-content-landasan-hukum p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
   }
   ul.ul-landasan-hukum > li {
     list-style: none;
     margin-bottom: 10px;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
     text-align: left;
   }
@@ -2205,11 +2208,11 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     width: 100%;
   }
   .container-content-visi-bem {
@@ -2229,7 +2232,7 @@ img.card-image-modal {
   }
   .container-content-visi-bem p {
     width: 100%;
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .container-misi-bem {
@@ -2238,12 +2241,12 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .container-icon-misi-bem {
@@ -2259,7 +2262,7 @@ img.card-image-modal {
     margin-left: unset;
   }
   ul.ul-misi-bem > li {
-    font-size: .58em;
+    font-size: 0.58em;
     line-height: 16px;
   }
   .logo-ellipse-structure {
@@ -2279,7 +2282,7 @@ img.card-image-modal {
     height: 100%;
     /* top: 2900px; */
     /* bottom: 50px; */
-    background: #2D3995;
+    background: #2d3995;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 100%;
@@ -2303,15 +2306,15 @@ img.card-image-modal {
     margin-bottom: 90px;
   }
   h2.subtitle-content-structure {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .centered {
     margin-top: 15%;
   }
   .card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(90.999% - 1em);
-            flex: 0 1 calc(90.999% - 1em);
+    -ms-flex: 0 1 calc(90.999% - 1em);
+    flex: 0 1 calc(90.999% - 1em);
   }
   .section-content-patner {
     width: 100%;
@@ -2324,16 +2327,16 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     text-align: center;
     margin-left: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   ul.card-image-patner {
     margin-right: 35px;
@@ -2344,25 +2347,25 @@ img.card-image-modal {
     padding-top: 25px;
     padding-bottom: 20px;
     width: 100%;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc {
     display: -webkit-box;
@@ -2371,8 +2374,8 @@ img.card-image-modal {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-image-big {
     display: -webkit-box;
@@ -2403,16 +2406,16 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-bottom: 40px;
     /* margin-right: 30px; */
   }
@@ -2436,7 +2439,7 @@ img.card-image-modal {
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-sosmed-footer {
     display: -webkit-box;
@@ -2471,20 +2474,20 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   .card-icon-address {
@@ -2503,7 +2506,7 @@ img.card-image-modal {
     font-size: 14px;
     line-height: 26px;
     margin-left: unset;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -2516,10 +2519,10 @@ img.card-image-modal {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 200px;
   }
   nav.card-nav-link a.icon {
@@ -2529,7 +2532,7 @@ img.card-image-modal {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -2601,8 +2604,8 @@ img.card-image-modal {
   }
   .card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(29.999% - 1em);
-            flex: 0 1 calc(29.999% - 1em);
+    -ms-flex: 0 1 calc(29.999% - 1em);
+    flex: 0 1 calc(29.999% - 1em);
   }
   .card-content-footer {
     display: -webkit-box;
@@ -2610,17 +2613,17 @@ img.card-image-modal {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-top: 20px;
   }
   .card-desc {
@@ -2659,14 +2662,14 @@ img.card-image-modal {
   }
   .card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(30% - 1em);
-            flex: 0 1 calc(30% - 1em);
+    -ms-flex: 0 1 calc(30% - 1em);
+    flex: 0 1 calc(30% - 1em);
   }
   .card-desc {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -2684,8 +2687,8 @@ img.card-image-modal {
   .card-content-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=index.css.map */
