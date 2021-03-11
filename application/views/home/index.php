@@ -7,7 +7,11 @@
     <title><?= $title; ?></title>
     <link rel="stylesheet" href="<?= base_url('assets/css/index.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
-
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +33,7 @@
                     <a href="<?= base_url('home') ?>" class="link-header active">
                         Home
                     </a>
-                    <a href="#" class="link-header">
+                    <a href="#about" class="link-header">
                         About Us
                     </a>
                     <a href="<?= base_url('gallery') ?>" class="link-header">
@@ -59,7 +63,7 @@
                 Universitas BSI kampus PSDKU Bogor , dalam memperoleh hak dan kewajibannya sebagai mahasiswa.
             </h4>
         </div>
-        <div class="section-content-body">
+        <div class="section-content-body" id="about">
             <div class="container-ellipse2">
                 <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" alt="Ellipse 2" class="ellipse-2-card">
                 <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo Ellipse Body" class="logo-ellipse-body">
