@@ -13,21 +13,21 @@
     <div class="content-wrapper">
         <header class="header-responsive" id="headRespawnd">
             <div class="card-logo-header">
-                <img src="./assets/img/logo bem.png" alt="Logo BEM" class="logo-bem">
+                <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM" class="logo-bem">
                 <div class="pipe">|</div>
                 <h2 class="title-brand">BEM UBSI BOGOR</h2>
             </div>
             <nav class="card-nav-link" id="Navbar">
-                <a href="index.html" class="link-header">
+                <a href="<?= base_url('home') ?>" class="link-header">
                     Home
                 </a>
-                <a href="#" class="link-header">
+                <a href="<?= base_url('home') ?>" class="link-header">
                     About Us
                 </a>
-                <a href="gallery-revisi.html" class="link-header active">
+                <a href="<?= base_url('gallery') ?>" class="link-header active">
                     Gallery
                 </a>
-                <a href="contact-revisi.html" class="link-header">
+                <a href="<?= base_url('contact') ?>" class="link-header">
                     Contact
                 </a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -45,7 +45,7 @@
             <div class="card-wrapper-content-article">
                 <div class="card-content-article">
                     <div class="card-image-article">
-                        <img src="./assets/img/image-article.png" alt="Image Article" class="image-article">
+                        <img src="<?= base_url(); ?>assets/img/image-article.png" alt="Image Article" class="image-article">
                     </div>
                     <div class="card-article">
                         <h2 class="title-article">
@@ -68,12 +68,12 @@
             <div class="card-content-footer">
                 <div class="card-desc-footer">
                     <div class="card-image-big">
-                        <img src="./assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
-                        <img src="./assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
+                        <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
+                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
                     </div>
                     <div class="card-image-small">
-                        <img src="./assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
-                        <img src="./assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
+                        <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
+                        <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
                     </div>
                     <div class="card-desc-footer-bem">
                         <h2>Badan Eksekutif Mahasiswa</h2>
@@ -86,14 +86,14 @@
                     <div class="card-sosmed-footer">
                         <h2>Social Media :</h2>
                         <a href="#" class="link-sosmed-instagram">
-                            <img src="./assets/img/icon-ig.png" alt="Icon Instagram Footer">
+                            <img src="<?= base_url(); ?>assets/img/icon-ig.png" alt="Icon Instagram Footer">
                         </a>
                         <a href="#" class="link-sosmed-email">
-                            <img src="./assets/img/icon-email.png" alt="Icon Email Footer">
+                            <img src="<?= base_url(); ?>assets/img/icon-email.png" alt="Icon Email Footer">
                         </a>
                     </div>
                     <div class="card-address-footer">
-                        <img src="./assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
+                        <img src="<?= base_url(); ?>assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
                         <p class="desc-address">Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16124</p>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
         </footer>
     </div>
 </body>
-<script src="./assets/js/main.js"></script>
+<script src="<?= base_url(); ?>assets/js/main.js"></script>
 <script>
     window.onscroll = function() {
         scrollFunction()

@@ -54,7 +54,7 @@
             </div>
             <div class="card-content-gallery">
                 <div class="card-image-gallery-kegiatan">
-                    <a href="<?= base_url('gallery/article') ?>" class="link-card-gallery">
+                    <a href="<?= base_url('gallery/tampilArticle') ?>" class="link-card-gallery">
                         <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
                         <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
                     </a>
@@ -75,7 +75,7 @@
             </div>
             <div class="card-content-gallery">
                 <div class="card-image-proker-kegiatan">
-                    <a href="<?= base_url('gallery/proker') ?>" class="link-card-gallery">
+                    <a href="<?= base_url('gallery/tampilProker') ?>" class="link-card-gallery">
                         <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
                         <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
                     </a>
