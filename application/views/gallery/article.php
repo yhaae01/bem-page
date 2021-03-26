@@ -40,25 +40,19 @@
 
             </div>
             <h2 class="title-page">
-                Kegiatan Terbaru
+                <?= $title; ?>
             </h2>
             <div class="card-wrapper-content-article">
                 <div class="card-content-article">
                     <div class="card-image-article">
-                        <img src="<?= base_url(); ?>assets/img/image-article.png" alt="Image Article" class="image-article">
+                        <img src="<?= base_url('assets/img/cover/') . $data['cover']; ?>" alt="Image Article" class="image-article">
                     </div>
                     <div class="card-article">
                         <h2 class="title-article">
-                            WEBINAR ORGANISASI
+                            <?= $title; ?>
                         </h2>
                         <article>
-                            Webinar (akronim dari web seminar) adalah istilah umum dalam dunia kajian yang merujuk
-                            kepada kegiatan seminar yang dilakukan secara daring, menggunakan situs web atau aplikasi
-                            tertentu berbasis internet. Cara ini memungkinkan pembicara atau pengisi materi membagikan
-                            informasi mereka jarak jauh, lewat internet maupun media elektronik lainnya. Selain untuk
-                            kepentingan kajian akademik, webinar juga dapat dimanfaatkan untuk kepentingan marketing,
-                            koordinasi antarlembaga, dan pembelajaran jarak jauh. Untuk webinar terbatas, agar dapat
-                            berpartisipasi secara aktif, peserta webinar biasanya mendaftar terlebih dahulu.
+                            <?= $data['content']; ?>
                         </article>
                     </div>
                 </div>

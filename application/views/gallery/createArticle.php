@@ -22,6 +22,18 @@
                     </div>
                     <div class="form-group col-md-10 mx-auto">
                         <strong>
+                            <h5>Tipe Artikel</h5>
+                        </strong>
+                        <select name="type" id="type" class="form-control">
+                            <option selected disabled>Pilih Tipe Artikel</option>
+                            <option value="kegiatan">Kegiatan</option>
+                            <option value="proker">Program Kerja</option>
+                            <option value="lain-lain">Lain-lain</option>
+                        </select>
+                        <?php echo form_error('type', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                    <div class="form-group col-md-10 mx-auto">
+                        <strong>
                             <h5>Isi Konten</h5>
                         </strong>
                         <textarea class="ckeditor" id="content" name="content"><?php echo set_value('content'); ?></textarea>

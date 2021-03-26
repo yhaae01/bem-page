@@ -7,6 +7,9 @@ class Gallery extends CI_Controller
 
     public function index()
     {
+        $data['kegiatan'] = $this->db->get_where('tb_article', ['type' => 'kegiatan'])->result_array();
+        $data['proker'] = $this->db->get_where('tb_article', ['type' => 'proker'])->result_array();
+        $data['lainnya'] = $this->db->get_where('tb_article', ['type' => 'lain-lain'])->result_array();
         $data['title'] = 'Gallery';
         $this->load->view('gallery/index', $data);
     }
@@ -31,6 +34,7 @@ class Gallery extends CI_Controller
         $this->form_validation->set_rules('title', 'Judul', 'trim|required');
         $this->form_validation->set_rules('content', 'Isi Konten', 'trim|required');
         $this->form_validation->set_rules('url', 'Url', 'trim|required');
+        $this->form_validation->set_rules('type', 'Tipe', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
             $data['title'] = 'Tambah Artikel';
@@ -44,6 +48,7 @@ class Gallery extends CI_Controller
             $article['title'] = $this->input->post('title');
             $article['content'] = $this->input->post('content');
             $article['url'] = $this->input->post('url');
+            $article['type'] = $this->input->post('type');
             date_default_timezone_set('Asia/Jakarta');
             $article['date'] = date('Y-m-d H:i:s');
             $article['author'] = $data['user']['id'];
@@ -140,16 +145,29 @@ class Gallery extends CI_Controller
         redirect('gallery/article');
     }
 
-    public function tampilArticle()
+    public function DetailArticle($url)
+    {
+        $data['data'] = $this->db->get_where('tb_article', array('url' => $url))->row_array();
+        $data['title'] = $data['data']['title'];
+
+        $this->load->view('gallery/article', $data);
+    }
+    public function tampilKegiatan()
     {
         $data['title'] = 'Kegiatan Terbaru';
-        $this->load->view('gallery/article', $data);
+        $this->load->view('gallery/kegiatan', $data);
     }
 
     public function tampilProker()
     {
         $data['title'] = 'Program Kerja';
         $this->load->view('gallery/proker', $data);
+    }
+
+    public function tampilLainnya()
+    {
+        $data['title'] = 'Program Kerja';
+        $this->load->view('gallery/lainnya', $data);
     }
 }
 

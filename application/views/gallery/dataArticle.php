@@ -16,6 +16,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Cover</th>
                         <th scope="col">Judul</th>
+                        <th scope="col">Tipe</th>
                         <th scope="col">Penulis</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -27,6 +28,7 @@
                             <th scope="row"><?= $i; ?></th>
                             <td><img src="<?= base_url('assets/img/cover/') . $article['cover']; ?>" height="50"></td>
                             <td><?= ucwords($article['title']); ?></td>
+                            <td><?= ucwords($article['type']); ?></td>
                             <td><?= ucwords($article['author']); ?></td>
                             <td>
                                 <a href="<?= base_url('gallery/ubah?id=' . $article['id']) ?>" class="badge badge-warning">ubah</a>

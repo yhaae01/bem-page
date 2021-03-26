@@ -54,18 +54,16 @@
             </div>
             <div class="card-content-gallery">
                 <div class="card-image-gallery-kegiatan">
-                    <a href="<?= base_url('gallery/tampilArticle') ?>" class="link-card-gallery">
+                    <?php foreach ($kegiatan as $k) { ?>
+                        <a href="<?php base_url(); ?>gallery/DetailArticle/<?php echo $k['url'] ?>" class="link-card-gallery">
+                            <img src="<?= base_url('assets/img/cover/' . $k['cover']) ?>" alt="" class="img-gallery-kegiatan" width="300" style="border-radius: 5%;">
+                            <h2 class="title-gallery-kegiatan"><?= $k['title'] ?></h2>
+                        </a>
+                    <?php } ?>
+                    <!-- <a href="<?= base_url('gallery/tampilArticle') ?>" class="link-card-gallery">
                         <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
                         <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-2.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bem Berbagi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-3.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bantuan Sosial</h2>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div class="desc-gallery">
@@ -75,30 +73,12 @@
             </div>
             <div class="card-content-gallery">
                 <div class="card-image-proker-kegiatan">
-                    <a href="<?= base_url('gallery/tampilProker') ?>" class="link-card-gallery">
-                        <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-2.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bem Berbagi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-3.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bantuan Sosial</h2>
-                    </a>
-                    <a href="#" class="link-card-gallery">
-                        <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-2.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bem Berbagi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-3.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bantuan Sosial</h2>
-                    </a>
+                    <?php foreach ($proker as $p) { ?>
+                        <a href="<?php base_url(); ?>gallery/DetailArticle/<?php echo $p['url'] ?>" class="link-card-gallery">
+                            <img src="<?= base_url('assets/img/cover/' . $p['cover']) ?>" alt="" class="img-gallery-kegiatan" width="300" style="border-radius: 5%;">
+                            <h2 class="title-gallery-kegiatan"><?= $p['title'] ?></h2>
+                        </a>
+                    <?php } ?>
                 </div>
             </div>
             <div class="desc-gallery">
@@ -108,18 +88,12 @@
             </div>
             <div class="card-content-gallery">
                 <div class="card-image-gallery-kegiatan">
-                    <a href="#" class="link-card-gallery">
-                        <img src="./assets/img/image-article.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Webinar Organisasi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-2.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bem Berbagi</h2>
-                    </a>
-                    <a href="http://" class="link-card-gallery">
-                        <img src="./assets/img/image-article-3.png" alt="" class="img-gallery-kegiatan">
-                        <h2 class="title-gallery-kegiatan">Bantuan Sosial</h2>
-                    </a>
+                    <?php foreach ($lainnya as $l) { ?>
+                        <a href="<?php base_url(); ?>gallery/DetailArticle/<?php echo $l['url'] ?>" class="link-card-gallery">
+                            <img src="<?= base_url('assets/img/cover/' . $l['cover']) ?>" alt="" class="img-gallery-kegiatan" width="300" style="border-radius: 5%;">
+                            <h2 class="title-gallery-kegiatan"><?= $l['title'] ?></h2>
+                        </a>
+                    <?php } ?>
                 </div>
             </div>
         </div>
