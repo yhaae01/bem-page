@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 09, 2021 at 12:07 PM
--- Server version: 5.7.24
--- PHP Version: 7.4.8
+-- Generation Time: Mar 26, 2021 at 08:53 AM
+-- Server version: 10.5.9-MariaDB-log
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,8 @@ CREATE TABLE `tb_article` (
   `content` text NOT NULL,
   `url` varchar(255) NOT NULL,
   `cover` varchar(255) DEFAULT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `type` varchar(20) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `author` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -41,8 +42,11 @@ CREATE TABLE `tb_article` (
 -- Dumping data for table `tb_article`
 --
 
-INSERT INTO `tb_article` (`id`, `title`, `content`, `url`, `cover`, `date`, `author`) VALUES
-(1, 'Judul Pertama', '<p>Isi konten dari judul pertama</p>', 'judul-pertama', 'Tugu-Kujang.jpg', '2021-03-06 14:55:29', '3');
+INSERT INTO `tb_article` (`id`, `title`, `content`, `url`, `cover`, `type`, `date`, `author`) VALUES
+(1, 'Judul Pertama', '<p>Isi konten dari judul pertamaIsi konten dari judul pertamaIsi konten dari judul pertama</p><p>Isi konten dari judul pertamaIsi konten dari judul pertama</p><p>Isi konten dari judul pertama</p><p>Isi konten dari judul pertama</p><p>Isi konten dari judul pertama</p><p>Isi konten dari judul pertamaIsi konten dari judul pertamaIsi konten dari judul pertama</p>', 'judul-pertama', 'Tugu-Kujang.jpg', 'proker', '2021-03-26 07:36:45', '3'),
+(2, 'Kegiatan', '<p>Kegiatan</p>', 'kegiatan', 'Arpra_Creative_Logo.png', 'kegiatan', '2021-03-26 06:39:15', '3'),
+(3, 'Proker', '<p>Proker</p>', 'proker', 'Arpra_Creative_Logo1.png', 'proker', '2021-03-26 06:40:12', '3'),
+(4, 'Lainnya', '<p>Lainnya</p>', 'lainnya', 'Tugu-Kujang1.jpg', 'lain-lain', '2021-03-26 06:47:14', '3');
 
 -- --------------------------------------------------------
 
@@ -63,7 +67,9 @@ CREATE TABLE `tb_bph` (
 
 INSERT INTO `tb_bph` (`id`, `name`, `image`, `position`) VALUES
 (3, 'surya intan permana', 'bph_1615163441.png', 'ketua'),
-(4, 'aldi tegar prakoso', 'bph_1615165103.png', 'Wakil');
+(4, 'aldi tegar prakoso', 'bph_1615165103.png', 'Wakil'),
+(5, 'Jamaludin', 'bph_1615292423.jpg', 'anggota'),
+(6, 'Udinjamal', 'bph_1615292461.jpg', 'anggota');
 
 -- --------------------------------------------------------
 
@@ -335,8 +341,7 @@ INSERT INTO `user_submenu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`
 (18, 4, 'Kementrian Pendidikan & Budaya', 'content/kemendikbud', 'fas fa-fw fa-folder', 1),
 (19, 4, 'Kementrian Luar Negeri', 'content/kemenlu', 'fas fa-fw fa-folder', 1),
 (20, 4, 'Kementrian Komunikasi & Informatika', 'content/kemenkominfo', 'fas fa-fw fa-folder', 1),
-(21, 5, 'Artikel', 'gallery/article', 'fas fa-fw fa-folder', 1),
-(22, 5, 'Program Kerja', 'gallery/proker', 'fas fa-fw fa-folder', 1);
+(21, 5, 'Artikel', 'gallery/article', 'fas fa-fw fa-folder', 1);
 
 --
 -- Indexes for dumped tables
@@ -434,13 +439,13 @@ ALTER TABLE `user_submenu`
 -- AUTO_INCREMENT for table `tb_article`
 --
 ALTER TABLE `tb_article`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_bph`
 --
 ALTER TABLE `tb_bph`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tb_kemenag`
