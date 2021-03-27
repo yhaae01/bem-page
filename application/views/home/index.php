@@ -226,7 +226,7 @@
                                 <img src="./assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Olahraga</h2>
                             </button><!-- /card-four -->
-                            <button id="btnKemendagri" class="card" data-toggle="modal" data-target="#modalKemendag">
+                            <button id="btnKemendagri" class="card" data-toggle="modal" data-target="#modalKemendagri">
                                 <img src="./assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Dalam Negeri</h2>
                             </button><!-- /card-one -->
@@ -476,7 +476,7 @@
         <!-- End Modal Awal Kemendagri -->
 
         <!-- Modal Awal Kemendikbud -->
-        <div id="modalKemendikbud" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
+        <div id="modalKemendibud" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
 
             <!-- Modal content -->
             <div class="modal-content">
@@ -556,7 +556,7 @@
                 <div class="modal-body">
                     <div class="wrapper-modal-body">
                         <div class="centered-modal-body">
-                            <?php foreach ($kominfo as $fo) : ?>
+                            <?php foreach ($kemenkominfo as $fo) : ?>
                                 <div class="img-card-modal">
                                     <img src="<?= base_url('assets/img/kemenkominfo/') . $fo->image; ?>" alt="image-modal" class="card-image-modal">
                                     <div class="content-modal-body">
