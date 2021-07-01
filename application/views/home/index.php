@@ -208,41 +208,41 @@
                     <div class="wrapper-structure-grid">
                         <div class="centered">
                             <button id="btnBph" class="card" data-toggle="modal" data-target="#modalBph">
-                                <img src="./assets/img/BPH.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>BPH.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Badan Pengurus Harian</h2>
                             </button><!-- /card-one -->
 
                             <button id="btnKemenko" class="card" data-toggle="modal" data-target="#modalKemenko">
-                                <img src="./assets/img/Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Ekonomi</h2>
                             </button><!-- /card-two -->
 
                             <button id="btnKemenag" class="card" data-toggle="modal" data-target="#modalKemenag">
-                                <img src="./assets/img/Men Agama@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Men Agama@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Agama</h2>
                             </button><!-- /card-three -->
 
                             <button id="btnKemenor" class="card" data-toggle="modal" data-target="#modalKemenor">
-                                <img src="./assets/img/Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Olahraga</h2>
                             </button><!-- /card-four -->
                             <button id="btnKemendagri" class="card" data-toggle="modal" data-target="#modalKemendagri">
-                                <img src="./assets/img/Mendagri@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Mendagri@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Dalam Negeri</h2>
                             </button><!-- /card-one -->
 
                             <button id="btnKemendikbud" class="card" data-toggle="modal" data-target="#modalKemendibud">
-                                <img src="./assets/img/Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Pendidikan & Budaya</h2>
                             </button><!-- /card-two -->
 
                             <button id="btnKemenlu" class="card" data-toggle="modal" data-target="#modalKemenlu">
-                                <img src="./assets/img/Menlu@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Menlu@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2>Kementrian Luar Negri</h2>
                             </button><!-- /card-three -->
 
                             <button id="btnKominfo" class="card" data-toggle="modal" data-target="#modalKominfo">
-                                <img src="./assets/img/Kominfo@300x-8.png" alt="" class="card-image-structure-group">
+                                <img src="<?= base_url('assets/img/') ?>Kominfo@300x-8.png" alt="" class="card-image-structure-group">
                                 <h2 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h2>
                             </button><!-- /card-four -->
                         </div>

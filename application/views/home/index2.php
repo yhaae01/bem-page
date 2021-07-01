@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <title><?= $title; ?></title>
 </head>
@@ -173,6 +174,194 @@
         </div>
     </section>
 
+    <section id="kepengurusan">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" class="text-center">
+                    <h4 class="mt-5">Kabinet Delarosa</h4>
+                    <h2>Susunan Kepengurusan</h2>
+                </div>
+                <!-- Baris 1 modal -->
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/BPH.png') ?>" width="100px">
+                                <h4 class="mt-3">Badan Pengurus Harian</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Men ekonomi@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-4">Kementrian Ekonomi</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Men Agama@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Agama</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Men Olahraga@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Olahraga</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Baris 2 modal -->
+            <div class="row">
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Mendagri@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Dalam Negeri</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Mendikbud@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-1">Kementrian Pendidikan & Budaya</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Menlu@300x-8.png') ?>" width="100px">
+                                <h3 class="mt-4">Kementrian Luar Negri</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none">
+                                <img src="<?= base_url('assets/img/Kominfo@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Komunikasi Dan Informatika</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="member">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <strong>
+                        <h2 class="mt-5">Member Of:</h2>
+                    </strong>
+                </div>
+                <div class="col-sm-8">
+                    <img src="<?= base_url(); ?>assets/img/BEM-SI-01 1.png">
+                    <img src="<?= base_url(); ?>assets/img/Bsb@300x-8.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <!-- Section: Links  -->
+        <section id="footer">
+            <div class="container text-center text-md-start mt-5 p-4">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Badan Eksekutif Mahasiswa
+                        </h6>
+                        <p>
+                            Unviersitas Bina Sarana Informatika
+                        </p>
+                        <p>
+                            PSDKU Kota Bogor
+                        </p>
+                        <p>
+                            Kabinet Delarosa
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" height="80px">
+                        </p>
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/logo bem.png" height="80px">
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" height="85px">
+                        </p>
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" height="85px">
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah,
+                            Kota Bogor, Jawa Barat 16124</p>
+                        <p>
+                            <i class="fab fa-instagram me-3"></i>
+                            @bemubsibogor
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © <?= date('Y') ?> Copyright:
+            <a class="text-reset fw-bold" href="">BEM UBSI BOGOR</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="<?= base_url() ?>assets/js/jquery-3.4.1.min.js"></script>
     <script src="<?= base_url() ?>assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>

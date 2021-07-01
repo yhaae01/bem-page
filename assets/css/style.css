@@ -6,7 +6,8 @@ ul {
 
 /* Navigasi */
 .navbar {
-  background-color: rgba(47, 133, 230, 0.95);
+  /* background-color: rgba(47, 133, 230, 0.95); */
+  background-color: #2d3995;
 }
 
 .navbar-brand img {
@@ -66,4 +67,22 @@ ul {
 
 .sejarah-desc {
   margin-top: 100px;
+}
+
+#kepengurusan {
+  background-color: #2d3995;
+  padding-top: 30px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#member {
+  margin-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer {
+  background-color: #2d3995;
+  color: white;
 }
