@@ -1,612 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <title><?= $title; ?></title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/index.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="content-wrapper">
-        <div class="section-header">
-            <header class="bem-header " id="headHomeRespawnd">
-                <div class="container-brand-bem">
-                    <div class="container-brand-logo-bem">
-                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo" class="brand-logo">
-                    </div>
-                    <div class="pipe">|</div>
-                    <div class="container-brand-title-bem">
-                        <h2 class="title-brand">
-                            BEM UBSI BOGOR
-                        </h2>
-                    </div>
+    <header>
+        <img src="<?= base_url(); ?>assets/img/Ellipse 1.png" class="bg-header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo" class="mr-3">
+                    <span><strong>BEM UBSI BOGOR</strong></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="<?= base_url() ?>">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sejarah">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <nav class="card-nav-link" id="Navbar">
-                    <a href="<?= base_url('home') ?>" class="link-header active">
-                        Home
-                    </a>
-                    <a href="#about" class="link-header">
-                        About Us
-                    </a>
-                    <a href="<?= base_url('gallery') ?>" class="link-header">
-                        Gallery
-                    </a>
-                    <a href="<?= base_url('contact') ?>" class="link-header">
-                        Contact
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="responsiveHeader()">
-                        <i class="fa fa-bars" id="iconNav"></i>
-                    </a>
-                </nav>
-            </header>
+            </div>
+        </nav>
+    </header>
 
-            <div class="container-header">
-                <img src="<?= base_url(); ?>assets/img/icon-cover.png" alt="Image Cover" class="image-cover-card">
-                <img src="<?= base_url(); ?>assets/img/Ellipse 1.png" alt="Image Cover" class="image-cover-ellipse">
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>
+                        Badan Eksekutif Mahasiswa UBSI PSDKU Bogor
+                    </h1>
+                    <br>
+                    <p>
+                        BEM UBSI Bogor adalah organisasi kemahasiswaan dalam ikatan moral dan intelektual yang menampung dan
+                        menyalurkan aspirasi mahasiswa
+                        Universitas BSI kampus PSDKU Bogor , dalam memperoleh hak dan kewajibannya sebagai mahasiswa.
+                    </p>
+                </div>
+                <div class="col-md-7 hero-img d-flex justify-content-center">
+                    <img src="<?= base_url(); ?>assets/img/icon-cover.png">
+                </div>
             </div>
         </div>
-        <div class="section-content-header">
-            <h2 class="landing-title">
-                Badan Eksekutif Mahasiswa UBSI PSDKU Bogor
-            </h2>
-            <h4 class="content-landing">
-                BEM UBSI Bogor adalah organisasi kemahasiswaan dalam ikatan moral dan intelektual yang menampung dan
-                menyalurkan aspirasi mahasiswa
-                Universitas BSI kampus PSDKU Bogor , dalam memperoleh hak dan kewajibannya sebagai mahasiswa.
-            </h4>
-        </div>
-        <div class="section-content-body" id="about">
-            <div class="container-ellipse2">
-                <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" alt="Ellipse 2" class="ellipse-2-card">
-                <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo Ellipse Body" class="logo-ellipse-body">
-                <div class="desc-title-body">
-                    <h3 class="title-content-body">
-                        About Us
+    </section>
+
+    <section id="sejarah">
+        <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" class="bg-sejarah">
+        <div class="container">
+
+            <div class="text-center sejarah-title">
+                <img src="<?= base_url(); ?>assets/img/logo bem.png">
+                <h4>About Us</h4>
+                <h3>Visi Misi dan Sejarah</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center sejarah-desc mb-5">
+                <div class="col-md-10">
+                    <p class="text-justify">
+                        Sebelum menjadi Badan Eksekutif Mahasiswa(BEM). Awalnya BEM adalah Himpunan Mahasiwa. Yang di dirikan pada tahun 2004, di kampus UBSI Merdeka. Berawal dari inisiatif mahasiswa yang ingin memiliki wadah untuk mahasiswa bisa berproses untuk menjadi mahasiswa yang sejatinya, yang memenuhi 3 Peranan mahasiswa, serta Mengamalkan Tridharma perguruan tinggi, Wadah untuk penghimpunan aspirasi dan juga inovasi.
+                        Setelah 4 Tahun menjadi HIMA (Himpunan Mahasiswa). Organisasi ini bertranformasi menjadi Senat Mahasiswa yang di dirikan pada tanggal 28 Oktober 2008, Dan di dirikan Oleh Kang Acep. Beliau adalah Mahasiswa yang menginiasi adanya senat, dan juga Kampus UBSI PSDKU yang saat itu masih menjadi AMIK, Telah memenuhi syarat untuk bisa membangun lembaga eksekutif mahasiswa.
+                        Dan Setelah 11 Tahun menjadi Senat Mahasiswa, dan di karenakan AMIK BSI Bertransformasi menjadi UBSI (Universitas Bina Sarana Informatika). Maka Senat Pun Bertransformasi menjadi BEM UBSI PSDKU BOGOR Hingga saat ini.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-5">
+                    <h3>Definisi</h3>
+                    <p>
+                        BEM UBSI Kota Bogor adalah organisasi kemahasiswaan dalam ikatan moral dan intelektual yang menampung dan menyalurkan aspirasi mahasiswa Universitas BSI kampus PSDKU Bogor dalam memperoleh hak dan kewajibannya sebagai mahasiswa.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="<?= base_url(); ?>assets/img/icon-definisi.png">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-5">
+                    <img src="<?= base_url(); ?>assets/img/icon-landasan-hukum.png">
+                </div>
+                <div class="col-md-5">
+                    <h3>Landasan Hukum</h3>
+                    <p>
+                        BEM UBSI Kota BOGOR berasaskan pada:
+                    </p>
+                    <ul>
+                        <li>
+                            1. Pancasila.
+                        </li>
+                        <li>
+                            2. UUD 1945.
+                        </li>
+                        <li>
+                            3. Tri Dharma Perguruan Tinggi.
+                        </li>
+                        <li>
+                            4. Status UBSI.
+                        </li>
+                        <li>
+                            5. AD/ART BEM UBSI Kampus Kota BOGOR.
+                        </li>
+                        <li>
+                            6. Keputusan Rektor UBSI Nomor 225/1.02/UBSI/2018 tentang organisasi kemahasiswaaan di lingkungan UBSI.
+                        </li>
+                        <li>
+                            7. Dengan menjunjung tinggi moral dan akhlaq
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-5">
+                    <h3>
+                        Visi BEM UBSI Bogor
                     </h3>
-                    <h2 class="subtitle-content-body">
-                        Visi Misi Dan Sejarah
-                    </h2>
+                    <p>
+                        Meningkatkan dan mengembangkan fungsi BEM sebagai wadah aspiratif mahasiswa UBSI PSDKU Bogor
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="<?= base_url(); ?>assets/img/icon-visi-bem.png">
+                </div>
+            </div>
 
-                    <div class="container-sejarah">
-                        <p>Sebelum menjadi Badan Eksekutif Mahasiswa(BEM). Awalnya BEM adalah Himpunan Mahasiwa. Yang di
-                            dirikan pada tahun 2004, di kampus UBSI Merdeka. Berawal dari inisiatif mahasiswa yang ingin
-                            memiliki wadah untuk mahasiswa bisa berproses untuk menjadi mahasiswa yang sejatinya, yang
-                            memenuhi 3 Peranan mahasiswa, serta Mengamalkan Tridharma perguruan tinggi, Wadah untuk
-                            penghimpunan aspirasi dan juga inovasi.
-                        </p>
-                        <p>Setelah 4 Tahun menjadi HIMA (Himpunan Mahasiswa). Organisasi ini bertranformasi menjadi
-                            Senat Mahasiswa yang di dirikan pada tanggal 28 Oktober 2008, Dan di dirikan Oleh Kang Acep.
-                            Beliau adalah Mahasiswa yang menginiasi adanya senat, dan juga Kampus UBSI PSDKU yang saat
-                            itu masih menjadi AMIK, Telah memenuhi syarat untuk bisa membangun lembaga eksekutif
-                            mahasiswa.</p>
-                        <p>Dan Setelah 11 Tahun menjadi Senat Mahasiswa, dan di karenakan AMIK BSI Bertransformasi
-                            menjadi UBSI (Universitas Bina Sarana Informatika). Maka Senat Pun Bertransformasi menjadi
-                            BEM UBSI PSDKU BOGOR Hingga saat ini.</p>
+            <div class="row d-flex justify-content-center mb-5">
+                <div class="col-md-5">
+                    <img src="<?= base_url(); ?>assets/img/icon-misi-bem.png">
+                </div>
+                <div class="col-md-5">
+                    <h3>Misi BEM UBSI Bogor</h3>
+                    <ul>
+                        <li>
+                            1. Mengaktifkan kegiatan Mahasiswa.
+                        </li>
+                        <li>
+                            2. Menciptakan dan Menjaga kepercayaan pihak internal dan eksternal.
+                        </li>
+                        <li>
+                            3. Menciptakan lingkungan kampus yang kondusif.
+                        </li>
+                        <li>
+                            4. Membantu menjembatani dan memberi advokasi kepada Mahasiswa.
+                        </li>
+                        <li>
+                            5. Meningkatkan kepedulian dan Kesadaran Mahasiswa terhadap kehidupan sosial
+                            masyarakat.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kepengurusan">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" class="text-center">
+                    <h4 class="mt-5">Kabinet Delarosa</h4>
+                    <h2>Susunan Kepengurusan</h2>
+                </div>
+                <!-- Baris 1 modal -->
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#bph">
+                                <img src="<?= base_url('assets/img/BPH.png') ?>" width="100px">
+                                <h4 class="mt-3">Badan Pengurus Harian</h4>
+                            </button>
+                        </div>
                     </div>
-                    <div class="container-content-body">
-                        <div class="container-definisi">
-                            <div class="container-content-definisi">
-                                <h2 class="title-content-definisi">
-                                    Definisi
-                                </h2>
-                                <p>
-                                    BEM UBSI Kota Bogor adalah organisasi kemahasiswaan dalam ikatan moral dan
-                                    intelektual yang menampung dan menyalurkan aspirasi mahasiswa Universitas BSI kampus
-                                    PSDKU Bogor dalam memperoleh hak dan kewajibannya sebagai mahasiswa.
-                                </p>
-                            </div>
-                            <div class="container-icon-definisi">
-                                <img src="<?= base_url(); ?>assets/img/icon-definisi.png" alt="Icon Definisi" class="icon-definisi-card">
-                            </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemenko">
+                                <img src="<?= base_url('assets/img/Men ekonomi@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-4">Kementrian Ekonomi</h4>
+                            </button>
                         </div>
-                        <div class="container-landasan-hukum">
-                            <div class="container-icon-landasan-hukum">
-                                <img src="<?= base_url(); ?>assets/img/icon-landasan-hukum.png" alt="Icon Landasan Hukum" class="icon-landasan-hukum">
-                            </div>
-                            <div class="container-content-landasan-hukum">
-                                <h2 class="title-content-landasan-hukum">
-                                    Landasan Hukum
-                                </h2>
-                                <p>
-                                    BEM UBSI Kota BOGOR berasaskan pada:
-                                </p>
-                                <ul class="ul-landasan-hukum">
-                                    <li>
-                                        1. Pancasila.
-                                    </li>
-                                    <li>
-                                        2. UUD 1945.
-                                    </li>
-                                    <li>
-                                        3. Tri Dharma Perguruan Tinggi.
-                                    </li>
-                                    <li>
-                                        4. Status UBSI.
-                                    </li>
-                                    <li>
-                                        5. AD/ART BEM UBSI Kampus Kota BOGOR.
-                                    </li>
-                                    <li>
-                                        6. Keputusan Rektor UBSI Nomor 225/1.02/UBSI/2018 tentang organisasi
-                                        kemahasiswaaan di lingkungan UBSI.
-                                    </li>
-                                    <li>
-                                        7. Dengan menjunjung tinggi moral dan akhlaq
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemenag">
+                                <img src="<?= base_url('assets/img/Men Agama@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Agama</h4>
+                            </button>
                         </div>
-                        <div class="container-visi-bem">
-                            <div class="container-content-visi-bem">
-                                <h2 class="title-bem">
-                                    Visi BEM UBSI Bogor
-                                </h2>
-                                <p>
-                                    Meningkatkan dan mengembangkan fungsi BEM sebagai wadah aspiratif mahasiswa UBSI
-                                    PSDKU Bogor
-                                </p>
-                            </div>
-                            <div class="container-icon-visi-bem">
-                                <img src="<?= base_url(); ?>assets/img/icon-visi-bem.png" alt="Icon Visi Misi Bem" class="icon-visi-bem-card">
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemenor">
+                                <img src="<?= base_url('assets/img/Men Olahraga@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Olahraga</h4>
+                            </button>
                         </div>
-                        <div class="container-misi-bem">
-                            <div class="container-icon-misi-bem">
-                                <img src="<?= base_url(); ?>assets/img/icon-misi-bem.png" alt="Icon Misi Bem" class="icon-misi-bem-card">
-                            </div>
-                            <div class="container-content-misi-bem">
-                                <h2 class="title-misi-bem">
-                                    Misi BEM UBSI Bogor
-                                </h2>
-                                <ul class="ul-misi-bem">
-                                    <li>
-                                        1. Mengaktifkan kegiatan Mahasiswa.
-                                    </li>
-                                    <li>
-                                        2. Menciptakan dan Menjaga kepercayaan pihak internal dan eksternal.
-                                    </li>
-                                    <li>
-                                        3. Menciptakan lingkungan kampus yang kondusif.
-                                    </li>
-                                    <li>
-                                        4. Membantu menjembatani dan memberi advokasi kepada Mahasiswa.
-                                    </li>
-                                    <li>
-                                        5. Meningkatkan kepedulian dan Kesadaran Mahasiswa terhadap kehidupan sosial
-                                        masyarakat.
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Baris 2 modal -->
+            <div class="row">
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemendagri">
+                                <img src="<?= base_url('assets/img/Mendagri@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Dalam Negeri</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemendikbud">
+                                <img src="<?= base_url('assets/img/Mendikbud@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-1">Kementrian Pendidikan & Budaya</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemenlu">
+                                <img src="<?= base_url('assets/img/Menlu@300x-8.png') ?>" width="100px">
+                                <h3 class="mt-4">Kementrian Luar Negeri</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mt-5 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <button style="outline: none; border:none; background: none" data-toggle="modal" data-target="#kemenkominfo">
+                                <img src="<?= base_url('assets/img/Kominfo@300x-8.png') ?>" width="100px">
+                                <h4 class="mt-3">Kementrian Komunikasi Dan Informatika</h4>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section-content-structure">
-            <div class="container-card-structure">
-                <img src="<?= base_url(); ?>assets/img/Ellipse-2.png" alt="Logo Ellipse Structure" class="logo-ellipse-structure">
-                <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Delarosa Structure" class="logo-delarosa-structure">
-                <div class="desc-structure">
-                    <div class="container-wrapper-title-structure">
-                        <h3 class="title-content-structure">
-                            Kabinet Delarosa
-                        </h3>
-                        <h2 class="subtitle-content-structure">
-                            Susunan Kepengurusan
-                        </h2>
-                    </div>
+    </section>
 
-                    <!-- Button Modal Awal -->
-                    <div class="wrapper-structure-grid">
-                        <div class="centered">
-                            <button id="btnBph" class="card" data-toggle="modal" data-target="#modalBph">
-                                <img src="<?= base_url('assets/img/') ?>BPH.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Badan Pengurus Harian</h2>
-                            </button><!-- /card-one -->
-
-                            <button id="btnKemenko" class="card" data-toggle="modal" data-target="#modalKemenko">
-                                <img src="<?= base_url('assets/img/') ?>Men ekonomi@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Ekonomi</h2>
-                            </button><!-- /card-two -->
-
-                            <button id="btnKemenag" class="card" data-toggle="modal" data-target="#modalKemenag">
-                                <img src="<?= base_url('assets/img/') ?>Men Agama@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Agama</h2>
-                            </button><!-- /card-three -->
-
-                            <button id="btnKemenor" class="card" data-toggle="modal" data-target="#modalKemenor">
-                                <img src="<?= base_url('assets/img/') ?>Men Olahraga@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Olahraga</h2>
-                            </button><!-- /card-four -->
-                            <button id="btnKemendagri" class="card" data-toggle="modal" data-target="#modalKemendagri">
-                                <img src="<?= base_url('assets/img/') ?>Mendagri@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Dalam Negeri</h2>
-                            </button><!-- /card-one -->
-
-                            <button id="btnKemendikbud" class="card" data-toggle="modal" data-target="#modalKemendibud">
-                                <img src="<?= base_url('assets/img/') ?>Mendikbud@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Pendidikan & Budaya</h2>
-                            </button><!-- /card-two -->
-
-                            <button id="btnKemenlu" class="card" data-toggle="modal" data-target="#modalKemenlu">
-                                <img src="<?= base_url('assets/img/') ?>Menlu@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2>Kementrian Luar Negri</h2>
-                            </button><!-- /card-three -->
-
-                            <button id="btnKominfo" class="card" data-toggle="modal" data-target="#modalKominfo">
-                                <img src="<?= base_url('assets/img/') ?>Kominfo@300x-8.png" alt="" class="card-image-structure-group">
-                                <h2 class="title-card-structure">Kementrian Komunikasi Dan Informatika</h2>
-                            </button><!-- /card-four -->
-                        </div>
-                    </div>
-                    <!-- Button Modal Awal -->
-
-                </div>
-            </div>
-        </div>
-        <div class="section-content-patner">
-            <div class="card-content-patner">
-                <h2>Member Of :</h2>
-                <ul class="card-image-patner">
-                    <li>
-                        <img src="<?= base_url(); ?>assets/img/BEM-SI-01 1.png" alt="Bem SI">
-                    </li>
-                    <li>
-                        <img src="<?= base_url(); ?>assets/img/Bsb@300x-8.png" alt="Bem SI">
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="section-content-footer">
-            <div class="card-content-footer">
-                <div class="card-desc">
-                    <div class="card-image-big">
-                        <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
-                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
-                    </div>
-                    <div class="card-image-small">
-                        <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
-                        <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
-                    </div>
-                    <div class="card-desc-footer-bem">
-                        <h2>Badan Eksekutif Mahasiswa</h2>
-                        <p>Universitas Bina Sarana Informatika</p>
-                        <p>PSDKU Kota Bogor</p>
-                        <p>Kabinet Delarosa</p>
-                    </div>
-                </div>
-                <div class="card-sosmed">
-                    <div class="card-sosmed-footer">
-                        <h2>Social Media :</h2>
-                        <a href="#" class="link-sosmed-instagram">
-                            <img src="<?= base_url(); ?>assets/img/icon-ig.png" alt="Icon Instagram Footer">
-                        </a>
-                        <a href="#" class="link-sosmed-email">
-                            <img src="<?= base_url(); ?>assets/img/icon-email.png" alt="Icon Email Footer">
-                        </a>
-                    </div>
-                    <div class="card-address-footer">
-                        <img src="<?= base_url(); ?>assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
-                        <p class="desc-address">Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah,
-                            Kota Bogor, Jawa Barat 16124</p>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                Copyright <?= date('Y') ?> - BEM UBSI Bogor
-            </div>
-        </div>
-
-        <!-- Modal Awal Bph -->
-        <div id="modalBph" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
+    <!-- Modal baris 1 -->
+    <!-- Modal BPH -->
+    <div class="modal fade" id="bph" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/BPH.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Badan Pengurus Harian</h2>
+                    <h5 class="modal-title">Badan Pengurus Harian</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($bph as $bp) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($bp->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($bp->name); ?>
-                                        </h3>
-                                    </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($bph as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/bph/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
                                 </div>
-                            <?php endforeach; ?>
-                        </div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Bph -->
-
-        <!-- Modal Awal Kemenko -->
-        <div id="modalKemenko" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Men%20ekonomi@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Ekonomi</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemenko as $ko) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemenko/') . $ko->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($ko->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($ko->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                 </div>
             </div>
-
         </div>
-        <!-- End Modal Awal Kemenko -->
-
-        <!-- Modal Awal Kemenag -->
-        <div id="modalKemenag" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Men%20Agama@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Agama</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemenag as $nag) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemenag/') . $nag->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($nag->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($nag->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kemenag -->
-
-        <!-- Modal Awal Kemenor -->
-        <div id="modalKemenor" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Men%20Olahraga@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Olahraga</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemenor as $nor) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemenor/') . $nor->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($nor->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($nor->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kemenor -->
-
-        <!-- Modal Awal Kemendagri -->
-        <div id="modalKemendagri" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Mendagri@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Dalam Negri</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemendagri as $dagri) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemendagri/') . $dagri->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($dagri->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($dagri->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kemendagri -->
-
-        <!-- Modal Awal Kemendikbud -->
-        <div id="modalKemendibud" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Mendikbud@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Pendidikan & Sosial Budaya</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemendikbud as $dagri) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemendikbud/') . $dagri->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($dagri->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($dagri->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kemendikbud -->
-
-        <!-- Modal Awal Kemenlu -->
-        <div id="modalKemenlu" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Menlu@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Luar Negri</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemenlu as $lu) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemenlu/') . $lu->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($lu->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($lu->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kemenlu -->
-
-        <!-- Modal Awal Kominfo -->
-        <div id="modalKominfo" class="modal" tabindex="-1" role="dialog" aria-labelledby="structureModalLabel" aria-hidden="true">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <img src="./assets/img/Kominfo@300x-8.png" alt="" srcset="" class="modal-header-image">
-                    <h2 class="title-modal-header">Kementrian Komunikasi & Informatika</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="wrapper-modal-body">
-                        <div class="centered-modal-body">
-                            <?php foreach ($kemenkominfo as $fo) : ?>
-                                <div class="img-card-modal">
-                                    <img src="<?= base_url('assets/img/kemenkominfo/') . $fo->image; ?>" alt="image-modal" class="card-image-modal">
-                                    <div class="content-modal-body">
-                                        <h2 class="title-modal-body">
-                                            <?= ucwords($fo->position); ?>
-                                        </h2>
-                                        <h3 class="subtitle-modal-body">
-                                            <?= ucwords($fo->name); ?>
-                                        </h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- End Modal Awal Kominfo -->
-
     </div>
+    <!-- End Modal BPH -->
+    <!-- Modal kemenko -->
+    <div class="modal fade" id="kemenko" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Ekonomi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemenko as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemenko/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemenko -->
+    <!-- Modal kemenag -->
+    <div class="modal fade" id="kemenag" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Agama</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemenag as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemenag/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemenag -->
+    <!-- Modal kemenor -->
+    <div class="modal fade" id="kemenor" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Olahraga</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemenor as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemenor/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemenor -->
+    <!-- End Modal baris 1 -->
+
+    <!-- Modal baris 2 -->
+    <!-- Modal kemendagri -->
+    <div class="modal fade" id="kemendagri" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Dalam Negeri</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemendagri as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemendagri/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemendagri -->
+    <!-- Modal kemendikbud -->
+    <div class="modal fade" id="kemendikbud" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Pendidikan dan Budaya</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemendikbud as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemendikbud/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemendikbud -->
+    <!-- Modal kemenlu -->
+    <div class="modal fade" id="kemenlu" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Luar Negeri</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemenlu as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemenlu/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemenlu -->
+    <!-- Modal kemenkominfo -->
+    <div class="modal fade" id="kemenkominfo" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kementrian Komunikasi dan Informatika</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <?php foreach ($kemenkominfo as $bp) : ?>
+                            <div class="col-sm-3">
+                                <img src="<?= base_url('assets/img/kemenkominfo/') . $bp->image; ?>" height="100px">
+                                <div class="content-modal-body">
+                                    <h3 class="title-modal-body">
+                                        <?= ucwords($bp->position); ?>
+                                    </h3>
+                                    <h5 class="subtitle-modal-body">
+                                        <?= ucwords($bp->name); ?>
+                                    </h5>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal kemenkominfo -->
+    <!-- End Modal baris 2 -->
+
+    <section id="member">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <strong>
+                        <h2 class="mt-5">Member Of:</h2>
+                    </strong>
+                </div>
+                <div class="col-sm-8">
+                    <img src="<?= base_url(); ?>assets/img/BEM-SI-01 1.png">
+                    <img src="<?= base_url(); ?>assets/img/Bsb@300x-8.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <!-- Section: Links  -->
+        <section id="footer">
+            <div class="container text-center text-md-start mt-5 p-4">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Badan Eksekutif Mahasiswa
+                        </h6>
+                        <p>
+                            Unviersitas Bina Sarana Informatika
+                        </p>
+                        <p>
+                            PSDKU Kota Bogor
+                        </p>
+                        <p>
+                            Kabinet Delarosa
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" height="80px">
+                        </p>
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/logo bem.png" height="80px">
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" height="85px">
+                        </p>
+                        <p>
+                            <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" height="85px">
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah,
+                            Kota Bogor, Jawa Barat 16124</p>
+                        <p>
+                            <i class="fab fa-instagram me-3"></i>
+                            @bemubsibogor
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © <?= date('Y') ?> Copyright:
+            <a class="text-reset fw-bold" href="">BEM UBSI BOGOR</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="<?= base_url() ?>assets/js/jquery-3.4.1.min.js"></script>
+    <script src="<?= base_url() ?>assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<script src="<?= base_url(); ?>assets/js/jquery-3.4.1.min.js"></script>
-<script src="<?= base_url(); ?>assets/js/bootstrap.min.js"></script>
-<script src="<?= base_url(); ?>assets/js/main.js"></script>
-<script>
-    // Scroll Navbar Home Page Responsive
-    window.onscroll = function() {
-        scrollFunctionHome()
-    };
-
-    function scrollFunctionHome() {
-        var s = document.getElementById("headHomeRespawnd");
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            s.style.position = "fixed";
-            s.style.backgroundColor = "#1e2c91";
-            s.style.top = "0px";
-            s.style.width = "100%";
-            s.style.zIndex = "2";
-        } else if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            s.style.position = "relative";
-            s.style.backgroundColor = "auto";
-            s.style.top = "0px";
-            s.style.width = "100%";
-            s.style.zIndex = "2";
-        } else {
-            s.style = "none";
-        }
-    }
-</script>
 
 </html>

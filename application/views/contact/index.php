@@ -15,14 +15,13 @@
             <header class="header-responsive" id="headRespawnd">
                 <div class="card-logo-header">
                     <img src="./assets/img/logo bem.png" alt="Logo BEM" class="logo-bem">
-                    <div class="pipe">|</div>
                     <h2 class="title-brand">BEM UBSI BOGOR</h2>
                 </div>
                 <nav class="card-nav-link" id="Navbar">
                     <a href="<?= base_url('home') ?>" class="link-header">
                         Home
                     </a>
-                    <a href="#" class="link-header">
+                    <a href="<?= base_url('home') ?>" class="link-header">
                         About Us
                     </a>
                     <a href="<?= base_url('gallery') ?>" class="link-header">

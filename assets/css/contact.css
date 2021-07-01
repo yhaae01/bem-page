@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-html, body {
-  font-family: 'Montserrat';
+html,
+body {
+  font-family: "Montserrat";
   background: #ffffff;
   font-size: 18px;
   height: 100vh;
@@ -8,12 +9,14 @@ html, body {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .content-wrapper {
@@ -21,14 +24,14 @@ html, body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -40,23 +43,23 @@ header.header-responsive {
   display: flex;
   width: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .card-logo-header {
   padding: 10px;
   -webkit-margin-start: 100px;
-          margin-inline-start: 100px;
+  margin-inline-start: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #FFFFFF;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
 }
 
 .pipe {
@@ -74,10 +77,10 @@ nav.card-nav-link {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   margin-left: 300px;
 }
 
@@ -88,11 +91,11 @@ a.link-header {
 
 .link-header.active {
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   -webkit-text-decoration-color: #eee;
-          text-decoration-color: #eee;
+  text-decoration-color: #eee;
   text-decoration-thickness: 3px;
   text-underline-position: under;
 }
@@ -104,7 +107,7 @@ a.icon {
 .section-header {
   position: relative;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin-bottom: 10%;
 }
 
@@ -140,7 +143,7 @@ a.icon {
 
 .section-content-header {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 5px;
 }
 
@@ -149,12 +152,13 @@ a.icon {
 }
 
 .overlay-bg {
-  background: url('/bem-page/assets/img/Ellipse-2.png');
+  background: url("/bem-page/assets/img/Ellipse-2.png");
   height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding-bottom: 50%;
+  margin-left: -10px;
   margin-top: -50%;
 }
 
@@ -172,13 +176,13 @@ h2.title-contact {
 
 .section-body-contact {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: auto;
   width: 100%;
   height: 100vh;
   padding: 0px 100px !important;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   position: inherit;
 }
 
@@ -188,23 +192,23 @@ h2.title-contact {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card-maps {
   width: 100%;
   margin-right: 35px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 iframe.maps {
@@ -218,7 +222,7 @@ iframe.maps {
 .section-content-footer-contact {
   margin-top: 350px;
   padding: 30px;
-  background-color: #2D3995;
+  background-color: #2d3995;
 }
 
 footer.footer-responsive {
@@ -227,7 +231,7 @@ footer.footer-responsive {
   bottom: 0px;
   padding-bottom: 35px;
   height: 100%;
-  background-color: #2D3995;
+  background-color: #2d3995;
 }
 
 .card-content-footer {
@@ -235,14 +239,14 @@ footer.footer-responsive {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-desc-footer {
@@ -250,14 +254,14 @@ footer.footer-responsive {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-image-big {
@@ -265,13 +269,13 @@ footer.footer-responsive {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .card-image-footer-bsi {
@@ -289,16 +293,16 @@ footer.footer-responsive {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   margin-right: 30px;
 }
 
@@ -320,7 +324,7 @@ footer.footer-responsive {
   font-size: 18px;
   line-height: 26px;
   /* or 144% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-desc-footer-bem > p:not(:last-child) {
@@ -329,7 +333,7 @@ footer.footer-responsive {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-desc-footer-bem > p {
@@ -345,18 +349,18 @@ footer.footer-responsive {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .card-sosmed-footer h2 {
@@ -367,15 +371,15 @@ footer.footer-responsive {
 
 .link-sosmed-instagram {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: -50px;
 }
 
 .link-sosmed-email {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: -150px;
 }
 
@@ -384,20 +388,20 @@ footer.footer-responsive {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .card-icon-address {
@@ -417,7 +421,7 @@ footer.footer-responsive {
   line-height: 26px;
   margin-left: 100px;
   /* identical to box height, or 186% */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 310px) and (max-width: 410px) {
@@ -427,14 +431,14 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     background-color: #2d3995;
     z-index: 3;
   }
@@ -444,23 +448,23 @@ footer.footer-responsive {
     display: flex;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding-top: 2px;
   }
   .card-logo-header {
     padding: 10px;
     -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    margin-inline-start: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #FFFFFF;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
     font-size: 30%;
   }
   h2.title-brand {
@@ -483,10 +487,10 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 5px;
   }
   nav.card-nav-link a.icon {
@@ -496,7 +500,7 @@ footer.footer-responsive {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -545,7 +549,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .section-body-contact {
@@ -555,8 +559,8 @@ footer.footer-responsive {
   .card-content-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-maps {
     margin-right: unset;
@@ -570,7 +574,7 @@ footer.footer-responsive {
     bottom: 0px;
     height: 100%;
     padding-bottom: 20px;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
@@ -578,17 +582,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-top: 20px;
   }
   .card-desc-footer {
@@ -597,18 +601,18 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -619,13 +623,13 @@ footer.footer-responsive {
   }
   .card-image-big {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: auto 20px;
   }
   .card-image-footer-bsi {
@@ -639,16 +643,16 @@ footer.footer-responsive {
   .card-image-small {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: 20px auto;
   }
   .card-image-footer-delarosa {
@@ -666,7 +670,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 12px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p:not(:last-child) {
     font-family: Poppins;
@@ -674,7 +678,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 9px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -691,14 +695,14 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 10px auto;
   }
   .card-sosmed-footer a > img {
@@ -707,38 +711,38 @@ footer.footer-responsive {
   }
   .card-sosmed-footer h2 {
     margin: auto;
-    font-size: .5em;
+    font-size: 0.5em;
     margin-right: -40px;
     color: #eaeaea;
   }
   .link-sosmed-instagram {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-right: -50px;
   }
   .link-sosmed-email {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-left: -150px;
   }
   .card-address-footer {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px auto;
   }
   .desc-address {
     color: #eaeaea;
     margin-right: 35px;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .copyright {
     font-family: Poppins;
@@ -746,7 +750,7 @@ footer.footer-responsive {
     font-weight: 300;
     font-size: 13px;
     margin-left: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
 }
@@ -758,14 +762,14 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     background-color: #2d3995;
     z-index: 3;
   }
@@ -775,22 +779,22 @@ footer.footer-responsive {
     display: flex;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .card-logo-header {
     padding: 10px;
     -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    margin-inline-start: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #FFFFFF;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
     font-size: 30%;
   }
   h2.title-brand {
@@ -813,10 +817,10 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 70px;
   }
   nav.card-nav-link a.icon {
@@ -826,7 +830,7 @@ footer.footer-responsive {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -875,7 +879,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .section-body-contact {
@@ -885,8 +889,8 @@ footer.footer-responsive {
   .card-content-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-maps {
     margin-right: unset;
@@ -897,7 +901,7 @@ footer.footer-responsive {
     bottom: 0px;
     height: 100%;
     padding-bottom: 20px;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
@@ -905,17 +909,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-top: 20px;
   }
   .card-desc-footer {
@@ -924,17 +928,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -945,13 +949,13 @@ footer.footer-responsive {
   }
   .card-image-big {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: auto 20px;
   }
   .card-image-footer-bsi {
@@ -965,16 +969,16 @@ footer.footer-responsive {
   .card-image-small {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: 20px auto;
   }
   .card-image-footer-delarosa {
@@ -991,7 +995,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 12px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p:not(:last-child) {
     font-family: Poppins;
@@ -999,7 +1003,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 9px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -1016,14 +1020,14 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 10px auto;
   }
   .card-sosmed-footer a > img {
@@ -1032,38 +1036,38 @@ footer.footer-responsive {
   }
   .card-sosmed-footer h2 {
     margin: auto;
-    font-size: .5em;
+    font-size: 0.5em;
     margin-right: -40px;
     color: #eaeaea;
   }
   .link-sosmed-instagram {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-right: -50px;
   }
   .link-sosmed-email {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-left: -150px;
   }
   .card-address-footer {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px auto;
   }
   .desc-address {
     color: #eaeaea;
     margin-right: 35px;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .copyright {
     font-family: Poppins;
@@ -1071,7 +1075,7 @@ footer.footer-responsive {
     font-weight: 300;
     font-size: 13px;
     margin-left: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
 }
@@ -1083,14 +1087,14 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     background-color: #2d3995;
     z-index: 3;
   }
@@ -1100,22 +1104,22 @@ footer.footer-responsive {
     display: flex;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .card-logo-header {
     padding: 10px;
     -webkit-margin-start: 10px;
-            margin-inline-start: 10px;
+    margin-inline-start: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #FFFFFF;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
     font-size: 30%;
   }
   h2.title-brand {
@@ -1138,10 +1142,10 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 10px;
   }
   nav.card-nav-link a.icon {
@@ -1151,7 +1155,7 @@ footer.footer-responsive {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -1179,7 +1183,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .container-header-contact {
@@ -1210,7 +1214,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .section-body-contact {
@@ -1220,8 +1224,8 @@ footer.footer-responsive {
   .card-content-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .card-maps {
     margin-right: unset;
@@ -1232,7 +1236,7 @@ footer.footer-responsive {
     bottom: 0px;
     height: 100%;
     padding-bottom: 20px;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
@@ -1240,17 +1244,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-top: 20px;
   }
   .card-desc-footer {
@@ -1259,17 +1263,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -1280,13 +1284,13 @@ footer.footer-responsive {
   }
   .card-image-big {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: auto 20px;
   }
   .card-image-footer-bsi {
@@ -1300,16 +1304,16 @@ footer.footer-responsive {
   .card-image-small {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: 20px auto;
   }
   .card-image-footer-delarosa {
@@ -1326,7 +1330,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 12px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p:not(:last-child) {
     font-family: Poppins;
@@ -1334,7 +1338,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 9px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -1351,14 +1355,14 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 10px auto;
   }
   .card-sosmed-footer a > img {
@@ -1367,38 +1371,38 @@ footer.footer-responsive {
   }
   .card-sosmed-footer h2 {
     margin: auto;
-    font-size: .5em;
+    font-size: 0.5em;
     margin-right: -40px;
     color: #eaeaea;
   }
   .link-sosmed-instagram {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-right: -50px;
   }
   .link-sosmed-email {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-left: -150px;
   }
   .card-address-footer {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px auto;
   }
   .desc-address {
     color: #eaeaea;
     margin-right: 35px;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .copyright {
     font-family: Poppins;
@@ -1406,7 +1410,7 @@ footer.footer-responsive {
     font-weight: 300;
     font-size: 13px;
     margin-left: 120px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -1417,14 +1421,14 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     background-color: #2d3995;
     z-index: 4;
   }
@@ -1435,14 +1439,14 @@ footer.footer-responsive {
   .card-logo-header {
     padding: 10px;
     -webkit-margin-start: 30px;
-            margin-inline-start: 30px;
+    margin-inline-start: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #FFFFFF;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
     font-size: 80%;
   }
   img.logo-bem {
@@ -1456,10 +1460,10 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 300px;
   }
   nav.card-nav-link a.icon {
@@ -1469,7 +1473,7 @@ footer.footer-responsive {
   nav.card-nav-link.responsive {
     position: relative;
     display: block;
-    background-color: #2D3995;
+    background-color: #2d3995;
     width: 100%;
     margin-left: 0px;
   }
@@ -1497,7 +1501,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .overlay-bg {
@@ -1514,7 +1518,7 @@ footer.footer-responsive {
     margin-top: unset;
     bottom: 0px;
     height: 100%;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
@@ -1522,17 +1526,17 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     padding-top: 20px;
   }
   .card-desc-footer {
@@ -1540,14 +1544,14 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc-footer-bem > p {
     font-family: Poppins;
@@ -1561,13 +1565,13 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 90px;
     margin-right: 65px;
   }
@@ -1586,16 +1590,16 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: auto 15px;
   }
   .card-image-footer-delarosa {
@@ -1612,7 +1616,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 15px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-desc-footer-bem > p:not(:last-child) {
     font-family: Poppins;
@@ -1620,7 +1624,7 @@ footer.footer-responsive {
     font-weight: bold;
     font-size: 11px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .card-sosmed {
     margin-left: 15%;
@@ -1630,14 +1634,14 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 10px auto;
   }
   .card-sosmed-footer a > img {
@@ -1646,7 +1650,7 @@ footer.footer-responsive {
   }
   .card-sosmed-footer h2 {
     margin: auto;
-    font-size: .7em;
+    font-size: 0.7em;
     margin-right: 50px;
     color: #eaeaea;
   }
@@ -1655,23 +1659,23 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px auto;
   }
   .desc-address {
     color: #eaeaea;
     margin-right: 100px;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .copyright {
     font-family: Poppins;
@@ -1680,7 +1684,7 @@ footer.footer-responsive {
     font-size: 12px;
     line-height: 26px;
     margin-left: 110px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -1688,24 +1692,24 @@ footer.footer-responsive {
   .card-logo-header {
     padding: 10px;
     -webkit-margin-start: 40px;
-            margin-inline-start: 40px;
+    margin-inline-start: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    color: #FFFFFF;
+    -ms-flex-align: end;
+    align-items: end;
+    color: #ffffff;
   }
   nav.card-nav-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 150px;
   }
   h2.title-page {
@@ -1715,7 +1719,7 @@ footer.footer-responsive {
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
   }
   .section-body-article {
@@ -1738,7 +1742,7 @@ footer.footer-responsive {
     position: relative;
     margin-top: unset;
     height: 100%;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
   .card-content-footer {
     display: -webkit-box;
@@ -1746,46 +1750,46 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 20px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-desc-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-image-big {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-right: 20px;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   .card-image-small {
     display: -webkit-box;
@@ -1793,16 +1797,16 @@ footer.footer-responsive {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin: auto;
   }
   .card-desc-footer-bem {
@@ -1813,7 +1817,7 @@ footer.footer-responsive {
   .card-sosmed {
     text-align: center;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: auto;
   }
   .card-sosmed-footer {
@@ -1821,19 +1825,19 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     margin-left: 125px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
   .card-address-footer {
     margin-left: 125px;
@@ -1841,17 +1845,17 @@ footer.footer-responsive {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .copyright {
     font-family: Poppins;
@@ -1860,7 +1864,7 @@ footer.footer-responsive {
     font-size: 14px;
     line-height: 26px;
     margin-left: 145px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -1874,7 +1878,7 @@ footer.footer-responsive {
     position: relative;
     margin-top: unset;
     height: 200px;
-    background-color: #2D3995;
+    background-color: #2d3995;
   }
 }
 /*# sourceMappingURL=contact.css.map */

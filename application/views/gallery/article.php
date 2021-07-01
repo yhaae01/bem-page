@@ -14,7 +14,6 @@
         <header class="header-responsive" id="headRespawnd">
             <div class="card-logo-header">
                 <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM" class="logo-bem">
-                <div class="pipe">|</div>
                 <h2 class="title-brand">BEM UBSI BOGOR</h2>
             </div>
             <nav class="card-nav-link" id="Navbar">
