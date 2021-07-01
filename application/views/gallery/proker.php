@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
+    <link rel="stylesheet" href="<?= base_url() ?>assets/vendor/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/article.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css') ?>">
 </head>
@@ -61,71 +63,82 @@
                 </div>
             </div>
         </div>
-        <footer class="footer-responsive">
-            <div class="card-content-footer">
-                <div class="card-desc-footer">
-                    <div class="card-image-big">
-                        <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" alt="Logo BSI Footer" class="card-image-footer-bsi">
-                        <img src="<?= base_url(); ?>assets/img/logo bem.png" alt="Logo BEM Footer" class="card-image-footer-bem">
+        <footer class="text-center text-lg-start bg-light text-muted">
+
+            <!-- Section: Links  -->
+            <section id="footer">
+                <div class="container text-center text-md-start mt-5 p-4">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Badan Eksekutif Mahasiswa
+                            </h6>
+                            <p>
+                                Unviersitas Bina Sarana Informatika
+                            </p>
+                            <p>
+                                PSDKU Kota Bogor
+                            </p>
+                            <p>
+                                Kabinet Delarosa
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <p>
+                                <img src="<?= base_url(); ?>assets/img/Logo UBSI 1.png" height="80px">
+                            </p>
+                            <p>
+                                <img src="<?= base_url(); ?>assets/img/logo bem.png" height="80px">
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <p>
+                                <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" height="85px">
+                            </p>
+                            <p>
+                                <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" height="85px">
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contact
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah,
+                                Kota Bogor, Jawa Barat 16124</p>
+                            <p>
+                                <i class="fab fa-instagram me-3"></i>
+                                @bemubsibogor
+                            </p>
+                        </div>
+                        <!-- Grid column -->
                     </div>
-                    <div class="card-image-small">
-                        <img src="<?= base_url(); ?>assets/img/logo-delarosa.png" alt="Logo Kabinet Delarosa" class="card-image-footer-delarosa">
-                        <img src="<?= base_url(); ?>assets/img/BSC@300x-8.png" alt="Logo BSC" class="card-image-footer-bsc">
-                    </div>
-                    <div class="card-desc-footer-bem">
-                        <h2>Badan Eksekutif Mahasiswa</h2>
-                        <p>Universitas Bina Sarana Informatika</p>
-                        <p>PSDKU Kota Bogor</p>
-                        <p>Kabinet Delarosa</p>
-                    </div>
+                    <!-- Grid row -->
                 </div>
-                <div class="card-sosmed">
-                    <div class="card-sosmed-footer">
-                        <h2>Social Media :</h2>
-                        <a href="#" class="link-sosmed-instagram">
-                            <img src="<?= base_url(); ?>assets/img/icon-ig.png" alt="Icon Instagram Footer">
-                        </a>
-                        <a href="#" class="link-sosmed-email">
-                            <img src="<?= base_url(); ?>assets/img/icon-email.png" alt="Icon Email Footer">
-                        </a>
-                    </div>
-                    <div class="card-address-footer">
-                        <img src="<?= base_url(); ?>assets/img/icon-address.png" alt="Icon Address Footer" class="card-icon-address">
-                        <p class="desc-address">Jl. Merdeka No.168, RT.01/RW.05, Ciwaringin, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16124</p>
-                    </div>
-                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © <?= date('Y') ?> Copyright:
+                <a class="text-reset fw-bold" href="">BEM UBSI BOGOR</a> - <a href="https://www.linkedin.com/in/surya-intan-permana-b60766214/" target="blank">Surya Intan Permana</a>
             </div>
-            <div class="copyright">
-                Copyright 2021 - BEM UBSI Bogor
-            </div>
+            <!-- Copyright -->
         </footer>
     </div>
 </body>
 <script src="<?= base_url(); ?>assets/js/main.js"></script>
-<script>
-    window.onscroll = function() {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        var s = document.getElementById("headRespawnd");
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            s.style.position = "fixed";
-            s.style.backgroundColor = "#1e2c91";
-            s.style.top = "0px";
-            s.style.zIndex = "1";
-        } else if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            s.style.position = "relative";
-            s.style.backgroundColor = "auto";
-            s.style.top = "0px";
-            s.style.zIndex = "2";
-        } else {
-            s.style.position = "relative";
-            s.style.backgroundColor = "auto";
-            s.style.top = "0px";
-            s.style.zIndex = "2";
-        }
-    }
-</script>
 
 </html>

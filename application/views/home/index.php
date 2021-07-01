@@ -575,18 +575,18 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
+                        <h5 class="text-uppercase fw-bold mb-4">
                             Badan Eksekutif Mahasiswa
-                        </h6>
-                        <p>
+                        </h5>
+                        <h6 class="mt-2">
                             Unviersitas Bina Sarana Informatika
-                        </p>
-                        <p>
+                        </h6>
+                        <h6 class="mt-2">
                             PSDKU Kota Bogor
-                        </p>
-                        <p>
+                        </h6>
+                        <h6 class="mt-2">
                             Kabinet Delarosa
-                        </p>
+                        </h6>
                     </div>
                     <!-- Grid column -->
 
@@ -635,7 +635,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
             © <?= date('Y') ?> Copyright:
-            <a class="text-reset fw-bold" href="">BEM UBSI BOGOR</a>
+            <a class="text-reset fw-bold" href="">BEM UBSI BOGOR</a> - <a href="https://www.linkedin.com/in/surya-intan-permana-b60766214/" target="blank">Surya Intan Permana</a>
         </div>
         <!-- Copyright -->
     </footer>
